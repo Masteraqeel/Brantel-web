@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brantel Group | Energy, marine and mineral resources</title>
+<meta name="description" content="Brantel Group is a Sri Lankan industrial group operating across energy and technology, marine manufacturing, and mineral exploration and mining.">
+<link rel="icon" href="https://brantel.lk/logo-brantel.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#002B54;
+  --navy-deep:#001C38;
+  --blue:#3752A4;
+  --blue-mid:#2F7EA2;
+  --red:#EA262F;
+  --warm:#F0EDEB;
+  --cool:#F2F4F6;
+  --stone:#4C4945;
+  --line:#DCDFE2;
+  --white:#FFFFFF;
+  --pad:clamp(20px,5vw,80px);
+  --max:1440px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Lato',system-ui,sans-serif;
+  font-size:17px;line-height:1.62;color:var(--stone);
+  background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+h1,h2,h3,h4{font-family:'Lato',sans-serif;color:var(--navy);line-height:1.06;letter-spacing:-.015em}
+.serif{font-family:'Sorts Mill Goudy',Georgia,serif;font-style:italic;letter-spacing:0}
+.label{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+
+/* ── header, two tier like Vitol ─────────────────────────── */
+.util{background:var(--navy-deep);color:#9FB2C7}
+.utilin{max-width:var(--max);margin:0 auto;padding:9px var(--pad);display:flex;
+  justify-content:flex-end;gap:26px}
+.utilin a{text-decoration:none;font-size:.76rem;letter-spacing:.09em;transition:color .2s}
+.utilin a:hover{color:#fff}
+header{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.headin{max-width:var(--max);margin:0 auto;padding:17px var(--pad);
+  display:flex;align-items:center;justify-content:space-between;gap:30px}
+.headin .logo img{height:27px;width:auto}
+.mainnav{display:flex;gap:32px}
+.mainnav a{text-decoration:none;color:var(--navy);font-size:.86rem;font-weight:600;
+  letter-spacing:.02em;padding-bottom:3px;border-bottom:2px solid transparent;transition:.2s}
+.mainnav a:hover{border-bottom-color:var(--red)}
+@media(max-width:1000px){.mainnav{display:none}.utilin{justify-content:center;gap:18px}}
+
+/* ── hero, full bleed rotating ───────────────────────────── */
+.hero{position:relative;height:min(88svh,780px);min-height:490px;overflow:hidden;background:var(--navy)}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover}
+.slide .veil{position:absolute;inset:0;background:
+  linear-gradient(105deg,rgba(0,43,84,.93) 0%,rgba(0,43,84,.74) 46%,rgba(0,43,84,.34) 100%)}
+.slide .inner{position:absolute;inset:0;display:flex;align-items:center}
+.slide .box{max-width:var(--max);margin:0 auto;padding:0 var(--pad);width:100%;color:#fff}
+.slide h1{color:#fff;font-weight:600;font-size:clamp(2.7rem,7.6vw,8.8rem);line-height:1.045;
+  letter-spacing:-.03em;max-width:12ch}
+.slide p{margin-top:20px;max-width:40ch;font-size:clamp(1.02rem,1.7vw,1.32rem);
+  font-weight:300;color:#DCE5EF}
+.slide .rule{width:56px;height:3px;background:var(--red);margin-bottom:26px}
+.dots{position:absolute;left:0;right:0;bottom:30px;z-index:6}
+.dotsin{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:flex;gap:10px}
+.dot{width:44px;height:3px;background:rgba(255,255,255,.32);border:0;cursor:pointer;padding:0;
+  transition:background .3s}
+.dot.on{background:var(--red)}
+
+/* ── news strip ──────────────────────────────────────────── */
+.news{background:var(--warm);border-bottom:1px solid var(--line)}
+.newsgrid{display:grid;gap:1px;background:var(--line)}
+@media(min-width:820px){.newsgrid{grid-template-columns:repeat(3,1fr)}}
+.ni{background:var(--warm);padding:30px clamp(20px,3vw,40px);text-decoration:none;
+  display:block;transition:background .3s}
+.ni:hover{background:#E6E1DD}
+.ni .meta{color:var(--blue);margin-bottom:12px;font-size:.68rem;letter-spacing:.2em;
+  text-transform:uppercase;font-weight:700}
+.ni .t{color:var(--navy);font-size:1.06rem;font-weight:600;line-height:1.34}
+
+/* ── sections ────────────────────────────────────────────── */
+section{padding:clamp(64px,10vh,128px) 0}
+section.warm{background:var(--warm)}
+section.cool{background:var(--cool)}
+section.navy{background:var(--navy);color:#C6D3E1}
+section.navy h2,section.navy h3{color:#fff}
+.eyebrow{color:var(--blue);margin-bottom:20px;display:flex;align-items:center;gap:12px}
+section.navy .eyebrow{color:#7FA3CE}
+h2{font-size:clamp(1.9rem,4.4vw,3.5rem);font-weight:600;max-width:20ch}
+.intro{max-width:62ch;margin-top:22px;font-size:clamp(1.02rem,1.8vw,1.2rem);font-weight:300}
+
+/* ── solutions carousel ──────────────────────────────────── */
+.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:44px 0 14px;margin:0 calc(var(--pad) * -1);padding-left:var(--pad);
+  padding-right:var(--pad);scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.card{flex:0 0 min(384px,84vw);scroll-snap-align:start;background:var(--white);
+  text-decoration:none;display:flex;flex-direction:column;transition:transform .4s}
+.card:hover{transform:translateY(-6px)}
+.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--navy)}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.3,1)}
+.card:hover .ph img{transform:scale(1.06)}
+.card .c{padding:26px 26px 30px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:1.44rem;font-weight:600;margin-bottom:12px}
+.card p{font-size:.96rem;font-weight:300;color:var(--stone)}
+.card .go{margin-top:auto;padding-top:22px;color:var(--blue);font-weight:700;
+  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;display:flex;gap:9px;align-items:center}
+.card .go::after{content:"";width:16px;height:1px;background:var(--red);transition:width .3s}
+.card:hover .go::after{width:30px}
+
+/* ── feature split ───────────────────────────────────────── */
+.feat{display:grid;gap:0;align-items:stretch;margin-top:clamp(40px,6vh,74px)}
+@media(min-width:960px){
+  .feat{grid-template-columns:1fr 1fr}
+  .feat.flip .fimg{order:-1}
+}
+.fimg{overflow:hidden;background:var(--navy);min-height:300px}
+.fimg img{width:100%;height:100%;object-fit:cover;min-height:300px}
+.ftext{background:var(--white);padding:clamp(32px,4.6vw,72px);display:flex;
+  flex-direction:column;justify-content:center}
+section.warm .ftext{background:var(--warm)}
+section.cool .ftext{background:var(--cool)}
+section.navy .ftext{background:transparent}
+.ftext h3{font-size:clamp(1.5rem,3vw,2.3rem);font-weight:600;margin-bottom:18px}
+.ftext p{font-weight:300;margin-bottom:15px}
+.ticks{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.ticks li{display:flex;gap:14px;align-items:flex-start;font-size:.97rem;font-weight:400}
+.ticks li::before{content:"";flex:none;width:9px;height:9px;margin-top:.52em;
+  border-left:2px solid var(--red);border-top:2px solid var(--red);transform:rotate(45deg)}
+
+/* ── stats ───────────────────────────────────────────────── */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));
+  gap:1px;background:rgba(255,255,255,.16);margin-top:clamp(40px,6vh,70px)}
+.st{background:var(--navy);padding:30px clamp(16px,2.2vw,30px)}
+.st .n{display:block;font-size:clamp(2.1rem,4.6vw,3.2rem);font-weight:300;color:#fff;
+  line-height:1;letter-spacing:-.03em}
+.st .l{display:block;margin-top:13px;color:#93A9C2;font-size:.72rem;letter-spacing:.18em;
+  text-transform:uppercase;font-weight:700;line-height:1.7}
+
+.photoband{position:relative;background:var(--navy);isolation:isolate}
+.photoband>.bg{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.photoband>.bg img{width:100%;height:100%;object-fit:cover}
+.photoband::before{content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,rgba(0,28,56,.95) 0%,rgba(0,43,84,.86) 52%,rgba(0,43,84,.62) 100%)}
+
+/* ── quote band ──────────────────────────────────────────── */
+.quote{max-width:26ch;font-size:clamp(1.7rem,4vw,3.1rem);line-height:1.24;color:var(--navy)}
+section.navy .quote{color:#fff}
+
+/* ── project grid ────────────────────────────────────────── */
+.projs{display:grid;gap:1px;background:var(--line);margin-top:44px;border-top:1px solid var(--line)}
+@media(min-width:680px){.projs{grid-template-columns:1fr 1fr}}
+@media(min-width:1080px){.projs{grid-template-columns:repeat(3,1fr)}}
+.pj{background:var(--white);padding:24px 26px;transition:background .25s}
+section.warm .pj{background:var(--warm)}
+section.cool .pj{background:var(--cool)}
+.pj:hover{background:var(--navy)}
+.pj:hover .nm,.pj:hover .m{color:#fff}
+.pj .nm{color:var(--navy);font-size:1.02rem;font-weight:600;line-height:1.32}
+.pj .m{display:block;margin-top:8px;font-size:.8rem;color:#7C7772;letter-spacing:.02em}
+
+/* ── vessel cards ────────────────────────────────────────── */
+.fleet{display:grid;gap:22px;margin-top:46px}
+@media(min-width:640px){.fleet{grid-template-columns:1fr 1fr}}
+@media(min-width:1060px){.fleet{grid-template-columns:repeat(3,1fr)}}
+.boat{background:var(--white);transition:transform .4s}
+section.cool .boat{background:var(--white)}
+.boat:hover{transform:translateY(-5px)}
+.boat img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--navy)}
+.boat .c{padding:20px 24px 26px}
+.boat .len{color:var(--blue);font-size:.72rem;letter-spacing:.18em;font-weight:700;text-transform:uppercase}
+.boat .nm{color:var(--navy);font-size:1.14rem;font-weight:600;margin:7px 0 5px}
+.boat .u{font-size:.9rem;font-weight:300}
+
+/* ── capability ──────────────────────────────────────────── */
+.caps{display:grid;gap:1px;background:rgba(255,255,255,.16);margin-top:46px}
+@media(min-width:760px){.caps{grid-template-columns:1fr 1fr}}
+@media(min-width:1120px){.caps{grid-template-columns:repeat(3,1fr)}}
+.cap{background:var(--navy);padding:30px clamp(22px,2.4vw,34px)}
+.cap h4{color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:11px}
+.cap p{font-size:.93rem;font-weight:300;color:#AFC0D3}
+
+/* ── brands ──────────────────────────────────────────────── */
+.brands{display:flex;flex-wrap:wrap;gap:11px;margin-top:38px}
+.brands li{list-style:none;border:1px solid var(--line);padding:12px 20px;font-size:.93rem;
+  font-weight:600;color:var(--navy);background:var(--white);transition:.25s}
+.brands li:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.brands li.own{border-color:var(--red)}
+
+/* ── timeline ────────────────────────────────────────────── */
+.tl{margin-top:44px;border-top:1px solid rgba(255,255,255,.2)}
+.tlrow{display:grid;grid-template-columns:9ch 1fr;gap:clamp(18px,4vw,56px);padding:24px 0;
+  border-bottom:1px solid rgba(255,255,255,.2);align-items:baseline}
+.tlrow .yr{color:#7FA3CE;font-size:.94rem;font-weight:700;letter-spacing:.1em}
+.tlrow b{display:block;color:#fff;font-size:1.12rem;font-weight:600;margin-bottom:6px}
+.tlrow .ev{font-weight:300;max-width:66ch;color:#B9C8D9}
+
+/* ── contact ─────────────────────────────────────────────── */
+.contact{display:grid;gap:clamp(30px,5vw,70px);margin-top:42px}
+@media(min-width:880px){.contact{grid-template-columns:1.05fr 1fr}}
+.cb{padding:20px 0;border-top:1px solid var(--line)}
+.cb .k{display:block;color:#7C7772;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:700;margin-bottom:7px}
+.cb .v{color:var(--navy);font-size:1.08rem;font-weight:600}
+.cb a{color:var(--blue);text-decoration:none}
+.cb a:hover{text-decoration:underline}
+.btn{display:inline-flex;align-items:center;gap:14px;margin-top:26px;padding:18px 34px;
+  background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:.82rem;
+  letter-spacing:.14em;text-transform:uppercase;transition:background .25s}
+.btn:hover{background:var(--blue)}
+.btn::after{content:"";width:22px;height:1px;background:var(--red)}
+
+/* ── footer ──────────────────────────────────────────────── */
+footer{background:var(--navy-deep);color:#93A9C2;padding:60px 0 34px}
+footer .top{display:grid;gap:40px}
+@media(min-width:900px){footer .top{grid-template-columns:1.4fr 1fr 1fr}}
+footer img.fl{height:26px;filter:brightness(0) invert(1);opacity:.95;margin-bottom:20px}
+footer p{font-weight:300;font-size:.95rem;max-width:44ch}
+footer h5{color:#fff;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+  font-weight:700;margin-bottom:16px}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+footer ul a{text-decoration:none;font-size:.93rem;font-weight:300;transition:color .2s}
+footer ul a:hover{color:#fff}
+.legal{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.13);
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.8rem;font-weight:300}
+.note{margin-top:18px;font-size:.74rem;color:#5F758F;font-weight:300;max-width:88ch;line-height:1.7}
+
+.rise{opacity:0;transform:translateY(22px);
+  transition:opacity .85s cubic-bezier(.2,.7,.3,1),transform .85s cubic-bezier(.2,.7,.3,1)}
+.rise.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rise{opacity:1;transform:none}
+  .slide{transition:none}
+  html{scroll-behavior:auto}
+}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<div class="util">
+  <div class="utilin">
+    <a href="#group">About us</a>
+    <a href="#history">History</a>
+    <a href="#news">Media</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<header>
+  <div class="headin">
+    <a class="logo" href="#top" aria-label="Brantel Group home">
+      <img src="https://brantel.lk/logo-brantel.png" alt="Brantel">
+    </a>
+    <nav class="mainnav">
+      <a href="#technology">Energy and technology</a>
+      <a href="#marine">Marine</a>
+      <a href="#resources">Mineral resources</a>
+      <a href="#projects">Projects</a>
+      <a href="#group">About</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="slide on" data-s="0">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/2015-_Trademart_Brussels%2C_Bruxelles%2C_Belgium_%28_Ank_Kumar_%29_01.jpg/1920px-2015-_Trademart_Brussels%2C_Bruxelles%2C_Belgium_%28_Ank_Kumar_%29_01.jpg" alt="Large rooftop photovoltaic array on a commercial building">
+    <span class="veil"></span>
+    <div class="inner"><div class="box">
+      <div class="rule"></div>
+      <h1>Power and networks</h1>
+      <p>Solar generation, optical infrastructure and enterprise computing, delivered across
+        Sri Lanka for twenty two years.</p>
+    </div></div>
+  </div>
+  <div class="slide" data-s="1">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/SL_Kalpitiya_asv2020-01_img4_Fishery_harbour.jpg/1920px-SL_Kalpitiya_asv2020-01_img4_Fishery_harbour.jpg" alt="Fishing vessels moored at a Sri Lankan fishery harbour">
+    <span class="veil"></span>
+    <div class="inner"><div class="box">
+      <div class="rule"></div>
+      <h1>Vessels for export</h1>
+      <p>Fibreglass hulls from 6 to 20 metres, built at Dikkowita for the fishing fleet and
+        for markets beyond it.</p>
+    </div></div>
+  </div>
+  <div class="slide" data-s="2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sunrise_Dam_Gold_Mine_open_pit_04.jpg/1920px-Sunrise_Dam_Gold_Mine_open_pit_04.jpg" alt="Open pit mine">
+    <span class="veil"></span>
+    <div class="inner"><div class="box">
+      <div class="rule"></div>
+      <h1>Ground to feasibility</h1>
+      <p>Exploration and open pit mining for heavy mineral sands, chromite, manganese, copper
+        and iron ore.</p>
+    </div></div>
+  </div>
+  <div class="dots"><div class="dotsin">
+    <button class="dot on" data-g="0" aria-label="Show energy and technology"></button>
+    <button class="dot" data-g="1" aria-label="Show marine"></button>
+    <button class="dot" data-g="2" aria-label="Show mineral resources"></button>
+  </div></div>
+</div>
+
+<div class="news" id="news">
+  <div class="wrap" style="padding:0">
+    <div class="newsgrid">
+      <a class="ni" href="#marine">
+        <span class="meta">Marine | 2023</span>
+        <span class="t">NorthWest Marine opens its purpose built yard at Dikkowita International Fisheries Harbour</span>
+      </a>
+      <a class="ni" href="#technology">
+        <span class="meta">Energy | Roadshow</span>
+        <span class="t">GoodWe technical training reaches Jaffna, Pasikudah and Wadduwa for installers island wide</span>
+      </a>
+      <a class="ni" href="#resources">
+        <span class="meta">Resources | Oman</span>
+        <span class="t">Exploration programmes extend across Africa, Australasia and the Middle East</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<section id="group" class="warm">
+  <div class="wrap">
+    <p class="eyebrow label rise">The group</p>
+    <h2 class="rise">Every day we put <span class="serif">power, data and hulls</span> into service.</h2>
+    <p class="intro rise">Brantel Group operates three companies across energy and technology,
+      marine manufacturing, and mineral exploration and mining. Each holds its own licences,
+      staff and customers. What they share is the habit of owning the whole line, from the
+      supply agreement through the build to the service afterwards.</p>
+
+    <div class="rail">
+      <a class="card rise" href="#technology">
+        <span class="ph"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Installation_of_photovoltaic_modules_on_roof.jpg/1920px-Installation_of_photovoltaic_modules_on_roof.jpg" alt="Technicians installing photovoltaic modules on a roof"></span>
+        <span class="c">
+          <h3>Energy and technology</h3>
+          <p>National distribution and turnkey delivery of solar generation, optical and
+            enterprise networks, and corporate computing, trading as Brantel Lanka since 2004.</p>
+          <span class="go">Explore</span>
+        </span>
+      </a>
+      <a class="card rise" href="#marine">
+        <span class="ph"><img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/passenger-boat.jpg" alt="Passenger boat built by NorthWest Marine"></span>
+        <span class="c">
+          <h3>Marine manufacturing</h3>
+          <p>Fibreglass vessel construction and marine engineering services, trading as
+            NorthWest Marine Lanka since 2006 from a yard at Dikkowita.</p>
+          <span class="go">Explore</span>
+        </span>
+      </a>
+      <a class="card rise" href="#resources">
+        <span class="ph"><img src="https://live.staticflickr.com/2104/2405635877_5682c63e55_b.jpg" alt="Exploration drilling rig mast"></span>
+        <span class="c">
+          <h3>Mineral resources</h3>
+          <p>Exploration, resource definition and open pit mining on the group's own projects
+            and under contract, from offices in Sri Lanka and Oman.</p>
+          <span class="go">Explore</span>
+        </span>
+      </a>
+      <a class="card rise" href="#projects">
+        <span class="ph"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Colombo_Skyline_Jan_2022.jpg/1920px-Colombo_Skyline_Jan_2022.jpg" alt="Colombo skyline"></span>
+        <span class="c">
+          <h3>Selected work</h3>
+          <p>Optical and network infrastructure in national landmarks, government buildings,
+            hospitals, universities and resorts across the island.</p>
+          <span class="go">Explore</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="navy photoband">
+  <div class="bg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Beautiful_Sunrise_over_the_Colombo_Skyline_as_seen_from_the_ocean.jpg/1920px-Beautiful_Sunrise_over_the_Colombo_Skyline_as_seen_from_the_ocean.jpg" alt="Sunrise over the Colombo skyline seen from the ocean"></div>
+  <div class="wrap">
+    <p class="eyebrow label rise">At a glance</p>
+    <p class="quote rise">A hospital network, a 500 kW array and a 20 metre longline hull,
+      all from the same group.</p>
+    <div class="stats">
+      <div class="st rise"><span class="n">22</span><span class="l">Years trading</span></div>
+      <div class="st rise"><span class="n">2,000+</span><span class="l">Business partners</span></div>
+      <div class="st rise"><span class="n">14</span><span class="l">Principal brands</span></div>
+      <div class="st rise"><span class="n">7</span><span class="l">Vessel classes</span></div>
+      <div class="st rise"><span class="n">3</span><span class="l">Regions of operation</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="technology">
+  <div class="wrap">
+    <p class="eyebrow label rise">Energy and technology</p>
+    <h2 class="rise">Brantel Lanka</h2>
+  </div>
+  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
+    <div class="feat rise">
+      <div class="fimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Solar_Sharing_Power_Plant_in_Kamisu%2C_Ibaraki_04.jpg/1920px-Solar_Sharing_Power_Plant_in_Kamisu%2C_Ibaraki_04.jpg" alt="Ground mounted solar array"></div>
+      <div class="ftext">
+        <h3>Supplying the corporate sector since 2004</h3>
+        <p>The company entered the market as appointed agent for Lenovo, launched its own
+          E-TEL device brand in 2008, and opened an enterprise division in 2014 for servers,
+          thin clients, mini PCs and custom software.</p>
+        <p>It is national distributor for Corning, Cisco, GoodWe, SMA, Deye, SolarEdge and
+          JA Solar among others, with branches, dealers and service centres across the island
+          and technical teams who commission what they sell.</p>
+        <ul class="ticks">
+          <li>Rooftop and ground mounted solar to 500 kW</li>
+          <li>Corning optical and Cisco structured cabling</li>
+          <li>Smartboards, servers, mini PCs and thin clients</li>
+          <li>Installer training roadshows nationwide</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="marine" class="cool">
+  <div class="wrap">
+    <p class="eyebrow label rise">Marine manufacturing</p>
+    <h2 class="rise">NorthWest Marine Lanka</h2>
+  </div>
+  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
+    <div class="feat flip rise">
+      <div class="fimg"><img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/9meter_boat.jpg" alt="Fishing vessel with forward cabin"></div>
+      <div class="ftext">
+        <h3>Built at Dikkowita, sold beyond it</h3>
+        <p>The company started in 2006 at the Industrial Development Board estate in Dankotuwa
+          with a small team of craftsmen and the aim of building longline fibreglass hulls good
+          enough to export. In 2023 it moved into a purpose built yard opposite Dikkowita
+          International Fisheries Harbour.</p>
+        <p>Alongside the boats it provides marine engineering to the Sri Lankan fishing
+          community: maintenance contracts, vessel operation contracts, longline advisory work,
+          ice and fish processing plant installation, and supply of gear, engines, generators
+          and spares.</p>
+        <ul class="ticks">
+          <li>Fishing, workboat, passenger and leisure hulls</li>
+          <li>Multi day longline vessels for offshore work</li>
+          <li>Ice plants and fish processing plants installed</li>
+          <li>Project planning for the fisheries sector</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
+    <div class="feat rise">
+      <div class="fimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/SL_Kalpitiya_asv2020-01_img5_Fishery_harbour.jpg/1920px-SL_Kalpitiya_asv2020-01_img5_Fishery_harbour.jpg" alt="Fishing vessels moored at a Sri Lankan fishery harbour"></div>
+      <div class="ftext">
+        <h3>Working for the fleet that works the coast</h3>
+        <p>Most of what leaves the yard goes to Sri Lankan owners running multi day trips out
+          of harbours like this one. The engineering side of the business keeps those vessels
+          at sea, with maintenance and operation contracts, gear and spares, and advisory work
+          on longline methods.</p>
+        <p>The same capability builds the shore infrastructure behind the fleet, from ice
+          plants and fish processing plants to project planning for the sector.</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="fleet">
+      <article class="boat rise">
+        <img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/56ft_longline_fishing_vessel.jpg" alt="Twenty metre multi day fishing vessel">
+        <div class="c"><span class="len">20.0 m</span><p class="nm">Multi day fishing vessel</p><p class="u">Offshore longline</p></div>
+      </article>
+      <article class="boat rise">
+        <img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/49.jpg" alt="Eighteen metre longline fishing vessel">
+        <div class="c"><span class="len">18.0 m</span><p class="nm">Longline fishing vessel</p><p class="u">Offshore longline</p></div>
+      </article>
+      <article class="boat rise">
+        <img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/passenger-boat.jpg" alt="Fifty foot passenger boat">
+        <div class="c"><span class="len">15.2 m</span><p class="nm">Passenger boat</p><p class="u">Transfer and tourism</p></div>
+      </article>
+      <article class="boat rise">
+        <img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/10m-boat-1.jpg" alt="Fourteen and a half metre multi day fishing vessel">
+        <div class="c"><span class="len">14.5 m</span><p class="nm">Multi day fishing vessel</p><p class="u">Coastal, multi day</p></div>
+      </article>
+      <article class="boat rise">
+        <img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/9meter_boat.jpg" alt="Ten and a half metre fishing vessel with forward cabin">
+        <div class="c"><span class="len">10.5 m</span><p class="nm">Fishing vessel, forward cabin</p><p class="u">Coastal</p></div>
+      </article>
+      <article class="boat rise">
+        <img src="https://northwestmarineboat.com/wp-content/uploads/2024/01/6meter-boat1.jpg" alt="Six metre day fishing vessel">
+        <div class="c"><span class="len">6.0 m</span><p class="nm">Day fishing vessel</p><p class="u">Inshore</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap">
+    <p class="eyebrow label rise">Mineral resources</p>
+    <h2 class="rise">Exploration and mining</h2>
+  </div>
+  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
+    <div class="feat rise">
+      <div class="fimg"><img src="https://live.staticflickr.com/2104/2405635877_5682c63e55_b.jpg" alt="Exploration drilling rig mast"></div>
+      <div class="ftext">
+        <h3>Sri Lanka and Oman, working three regions</h3>
+        <p>Brantel Mineral Exploration and Mining Services runs exploration programmes on the
+          group's own projects and under contract to other licence holders, targeting heavy
+          mineral sands, chromite, manganese, copper and iron ore.</p>
+        <p>Geological, engineering and metallurgical staff have come from working mines around
+          the world. Projects are mostly open pit heavy mineral sand and industrial mineral
+          deposits, with project work reaching across Africa, Australasia and the Middle East.</p>
+        <ul class="ticks">
+          <li>Company owned drill rigs, logged and sampled in house</li>
+          <li>Full geophysical suite from electrical to gravity</li>
+          <li>XRF and AAS analysis, field and laboratory</li>
+          <li>Technical reporting and environmental assessment</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cool" style="padding-top:0">
+  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
+    <div class="feat flip rise">
+      <div class="fimg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Chromite_%26_serpentine_%28Neoarchean%3B_Red_Lodge_Chromite_District%2C_Beartooth_Mountains%2C_Montana%2C_USA%29_1.jpg/1920px-Chromite_%26_serpentine_%28Neoarchean%3B_Red_Lodge_Chromite_District%2C_Beartooth_Mountains%2C_Montana%2C_USA%29_1.jpg" alt="Chromite banding in serpentinite"></div>
+      <div class="ftext">
+        <h3>What the group looks for</h3>
+        <p>Heavy mineral sands, chromite, manganese, copper and iron ore. Targets are assessed
+          on grade, tonnage and the cost of moving the product to a port, rather than on
+          headline resource figures alone.</p>
+        <p>Every programme runs to the same sequence: map the ground, survey it, drill it,
+          assay the samples, then decide whether the deposit carries a mine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="navy photoband">
+  <div class="bg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg/1920px-Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg" alt="Mining excavator loading a haul truck"></div>
+  <div class="wrap">
+    <p class="eyebrow label rise">Capability</p>
+    <h2 class="rise">Ground to feasibility, <span class="serif">in house</span>.</h2>
+    <p class="intro rise" style="color:#B9C8D9">A target can be mapped, drilled, assayed and
+      modelled without handing the programme to anyone else.</p>
+    <div class="caps">
+      <article class="cap rise"><h4>Field mapping</h4><p>Geological and structural mapping to identify new deposits and set drill targets.</p></article>
+      <article class="cap rise"><h4>Geophysical investigation</h4><p>Electrical, electromagnetic, magnetic, ground penetrating radar and gravity surveys across prospective zones.</p></article>
+      <article class="cap rise"><h4>Drilling</h4><p>Programmes run on owned or contracted rigs, with core and chips logged, sampled and modelled through to a block model.</p></article>
+      <article class="cap rise"><h4>Sample analysis</h4><p>XRF for oxides in field and laboratory, AAS for elements, grain counting for heavy mineral sand assemblages.</p></article>
+      <article class="cap rise"><h4>Studies and permitting</h4><p>Economic assessment, pre feasibility and feasibility studies, reserve estimation and environmental impact assessment.</p></article>
+      <article class="cap rise"><h4>Mine planning</h4><p>Strategic mine planning and engineering for open pit deposits, active mining and operational audit.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="warm">
+  <div class="wrap">
+    <p class="eyebrow label rise">Selected work</p>
+    <h2 class="rise">Standing on the island.</h2>
+    <p class="intro rise">Government, hospitality, healthcare, education, industrial and
+      residential clients across Sri Lanka.</p>
+
+    <div class="projs">
+      <div class="pj rise"><p class="nm">Lotus Tower</p><span class="m">Colombo, optical infrastructure</span></div>
+      <div class="pj rise"><p class="nm">Mattala Rajapaksa International Airport</p><span class="m">Hambantota, immigration network</span></div>
+      <div class="pj rise"><p class="nm">Havelock City, Phases 3 and 4</p><span class="m">Colombo, structured cabling</span></div>
+      <div class="pj rise"><p class="nm">Department of Immigration and Emigration</p><span class="m">Suhurupaya, Battaramulla</span></div>
+      <div class="pj rise"><p class="nm">Department of Census and Statistics</p><span class="m">Battaramulla, network</span></div>
+      <div class="pj rise"><p class="nm">Sierra Tower</p><span class="m">Colombo, structured cabling</span></div>
+      <div class="pj rise"><p class="nm">Winsland Reality</p><span class="m">500 kW ground mount solar</span></div>
+      <div class="pj rise"><p class="nm">Coldcargo</p><span class="m">Seeduwa, 250 kW solar</span></div>
+      <div class="pj rise"><p class="nm">Friend Polypack</p><span class="m">Weliweriya, 200 kW solar</span></div>
+      <div class="pj rise"><p class="nm">Anantara Peace Haven</p><span class="m">Tangalle, optical infrastructure</span></div>
+      <div class="pj rise"><p class="nm">Sheraton Turtle Beach Resort</p><span class="m">Kosgoda, optical infrastructure</span></div>
+      <div class="pj rise"><p class="nm">The Calm Resort and Spa</p><span class="m">Pasikuda, optical infrastructure</span></div>
+      <div class="pj rise"><p class="nm">National Hospital, Epilepsy Unit</p><span class="m">Colombo, network</span></div>
+      <div class="pj rise"><p class="nm">Sri Lanka Institute of Nanotechnology</p><span class="m">Network infrastructure</span></div>
+      <div class="pj rise"><p class="nm">SLIIT</p><span class="m">Malabe, network infrastructure</span></div>
+      <div class="pj rise"><p class="nm">Institute of Bankers Sri Lanka</p><span class="m">Colombo, network</span></div>
+      <div class="pj rise"><p class="nm">Global Rubber Industries</p><span class="m">Industrial, network</span></div>
+      <div class="pj rise"><p class="nm">NOLIMIT</p><span class="m">Retail, optical infrastructure</span></div>
+    </div>
+
+    <p class="eyebrow label rise" style="margin-top:clamp(56px,8vh,90px)">Principals</p>
+    <h2 class="rise" style="font-size:clamp(1.6rem,3.4vw,2.4rem)">National distribution agreements.</h2>
+    <ul class="brands rise">
+      <li class="own">E-TEL, own brand</li>
+      <li>Corning</li><li>Cisco</li><li>SMA</li><li>GoodWe</li><li>Deye</li>
+      <li>SolarEdge</li><li>JA Solar</li><li>KBE Solar Cables</li><li>Netgear</li>
+      <li>Inspur</li><li>Eiboard</li><li>Blackview</li><li>Oukitel</li>
+    </ul>
+  </div>
+</section>
+
+<section id="history" class="navy">
+  <div class="wrap">
+    <p class="eyebrow label rise">Corporate history</p>
+    <h2 class="rise">Built one agreement <span class="serif">at a time</span>.</h2>
+    <div class="tl">
+      <div class="tlrow rise"><span class="yr">2004</span><span class="ev"><b>Lenovo agency, Sri Lanka</b>The company enters the mobile market as the appointed agent for Lenovo.</span></div>
+      <div class="tlrow rise"><span class="yr">2006</span><span class="ev"><b>NorthWest Marine begins</b>A small team of craftsmen starts building longline fibreglass hulls for export at the Industrial Development Board estate in Dankotuwa.</span></div>
+      <div class="tlrow rise"><span class="yr">2008</span><span class="ev"><b>E-TEL launched</b>An own brand handset line built for the mass market. E-TEL becomes Sri Lanka's second highest selling smartphone brand.</span></div>
+      <div class="tlrow rise"><span class="yr">2014</span><span class="ev"><b>Enterprise division opens</b>Servers, thin clients, mini PCs and custom software for corporate front and back office.</span></div>
+      <div class="tlrow rise"><span class="yr">2023</span><span class="ev"><b>Dikkowita yard opens</b>NorthWest Marine moves into a purpose built manufacturing facility opposite Dikkowita International Fisheries Harbour.</span></div>
+      <div class="tlrow rise"><span class="yr">Today</span><span class="ev"><b>Three divisions</b>Energy and technology across the island, marine manufacturing at Dikkowita, and mineral exploration and mining from offices in Sri Lanka and Oman.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow label rise">Contact</p>
+    <h2 class="rise">Talk to the group office.</h2>
+    <div class="contact">
+      <div class="rise">
+        <p class="intro" style="margin-top:0">For supply, partnership and project enquiries,
+          write to the group office in Colombo. For products and installations in energy and
+          technology, or for a vessel enquiry, go straight to the division.</p>
+        <a class="btn" href="mailto:info@brantel.lk">Email the group office</a>
+      </div>
+      <div class="rise">
+        <div class="cb"><span class="k">Group office</span><span class="v">No. 285, R. A. De Mel Mawatha<br>Colombo 03, Sri Lanka</span></div>
+        <div class="cb"><span class="k">Telephone</span><span class="v"><a href="tel:+94112515600">+94 11 251 5600</a></span></div>
+        <div class="cb"><span class="k">Email</span><span class="v"><a href="mailto:info@brantel.lk">info@brantel.lk</a></span></div>
+        <div class="cb"><span class="k">Energy and technology</span><span class="v"><a href="https://brantel.lk">brantel.lk</a></span></div>
+        <div class="cb"><span class="k">Marine</span><span class="v"><a href="https://northwestmarineboat.com">northwestmarineboat.com</a></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <img class="fl" src="https://brantel.lk/logo-brantel.png" alt="Brantel">
+        <p>Brantel Group operates across energy and technology, marine manufacturing, and
+          mineral exploration and mining, from Colombo, Dankotuwa, Dikkowita and Oman.</p>
+      </div>
+      <div>
+        <h5>Divisions</h5>
+        <ul>
+          <li><a href="#technology">Energy and technology</a></li>
+          <li><a href="#marine">Marine manufacturing</a></li>
+          <li><a href="#resources">Mineral resources</a></li>
+          <li><a href="#projects">Selected work</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>How the group operates</h5>
+        <ul>
+          <li><a href="#group">About</a></li>
+          <li><a href="#history">Corporate history</a></li>
+          <li><a href="#news">Media</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>Copyright 2026 Brantel Group</span>
+      <span>Colombo &middot; Dankotuwa &middot; Dikkowita &middot; Oman</span>
+    </div>
+    <p class="note">Vessel photography courtesy of NorthWest Marine Lanka. Solar and mining
+      photographs are illustrative, sourced from Wikimedia Commons under Creative Commons
+      licences, and should be replaced with site photography before publication.</p>
+  </div>
+</footer>
+
+<script>
+const slides = [...document.querySelectorAll('.slide')];
+const dots = [...document.querySelectorAll('.dot')];
+let cur = 0, timer;
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function show(i){
+  cur = i;
+  slides.forEach((s,n) => s.classList.toggle('on', n === i));
+  dots.forEach((d,n) => d.classList.toggle('on', n === i));
+}
+function start(){ if(!reduce) timer = setInterval(() => show((cur+1) % slides.length), 6500); }
+dots.forEach(d => d.addEventListener('click', () => {
+  clearInterval(timer); show(+d.dataset.g); start();
+}));
+start();
+
+const io = new IntersectionObserver((es) => {
+  es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, {threshold:0.1, rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.rise').forEach((el,i) => {
+  el.style.transitionDelay = (Math.min(i % 5, 4) * 65) + 'ms';
+  io.observe(el);
+});
+</script>
+</body>
+</html>
