@@ -2,702 +2,851 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Brantel Group | Energy, marine and mineral resources</title>
-<meta name="description" content="Brantel Group is a Sri Lankan industrial group operating across energy and technology, marine manufacturing, and mineral exploration and mining.">
-<link rel="icon" href="data:image/png;base64,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">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brantel Group | Phones, solar, networks, vessels and minerals</title>
+<meta name="description" content="Brantel Group runs five businesses from Colombo: Brantel Connect phones and tablets, Brantel Energy solar, networks and IT, NorthWest Marine boatbuilding, and mineral exploration and mining.">
+<meta name="theme-color" content="#002B54">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23002B54'/%3E%3Cpath d='M18 20h28M18 32h22M18 44h28' stroke='%23E9262F' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,600;0,700;0,900;1,400&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#002B54;
-  --navy-deep:#001C38;
-  --blue:#3752A4;
-  --blue-mid:#2F7EA2;
-  --red:#EA262F;
-  --warm:#F0EDEB;
-  --cool:#F2F4F6;
-  --stone:#4C4945;
-  --line:#DCDFE2;
-  --white:#FFFFFF;
-  --pad:clamp(20px,5vw,80px);
-  --max:1440px;
+  --navy:#002B54;--navy-2:#001C38;--blue:#3853A4;--red:#E9262F;
+  --ink:#10213A;--text:#3B485B;--muted:#667387;--line:#DDE3EB;--pale:#F2F4F7;--sky:#EDF2F9;
+  --hh:64px;--pad:clamp(20px,5vw,72px);--max:1240px;
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  overflow-anchor:none;
-  font-family:'Lato',system-ui,sans-serif;
-  font-size:17px;line-height:1.62;color:var(--stone);
-  background:var(--white);-webkit-font-smoothing:antialiased;overflow-x:hidden;
-}
-img{display:block;max-width:100%}
+@media (max-width:760px){:root{--hh:56px}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html,body{overflow-x:clip}
+body{margin:0;background:#fff;color:var(--text);font-family:'Lato',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
 a{color:inherit}
-.wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
-h1,h2,h3,h4{font-family:'Lato',sans-serif;color:var(--navy);line-height:1.06;letter-spacing:-.015em}
-.serif{font-family:'Sorts Mill Goudy',Georgia,serif;font-style:italic;letter-spacing:0}
-.label{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+section[id]{scroll-margin-top:var(--hh)}
 
-/* ── header, two tier like Vitol ─────────────────────────── */
-.util{background:var(--navy-deep);color:#9FB2C7}
-.utilin{max-width:var(--max);margin:0 auto;padding:9px var(--pad);display:flex;
-  justify-content:flex-end;gap:26px}
-.utilin a{text-decoration:none;font-size:.76rem;letter-spacing:.09em;transition:color .2s}
-.utilin a:hover{color:#fff}
-header{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.96);
-  backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.headin{max-width:var(--max);margin:0 auto;padding:17px var(--pad);
-  display:flex;align-items:center;justify-content:space-between;gap:30px}
-.headin .logo img{height:27px;width:auto}
-.mainnav{display:flex;gap:32px}
-.mainnav a{text-decoration:none;color:var(--navy);font-size:.86rem;font-weight:600;
-  letter-spacing:.02em;padding-bottom:3px;border-bottom:2px solid transparent;transition:.2s}
-.mainnav a:hover{border-bottom-color:var(--red)}
-@media(max-width:1000px){.mainnav{display:none}.utilin{justify-content:center;gap:18px}}
+/* header */
+.top{position:sticky;top:0;z-index:50;height:var(--hh);background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.top .brand img{height:22px;width:auto}
+.top nav{display:flex;gap:30px}
+.top nav a{text-decoration:none;color:var(--navy);font-weight:700;font-size:15px}
+.top nav a:hover{color:var(--blue)}
+@media (max-width:760px){.top .brand img{height:17px}.top nav a:not(.keep){display:none}}
 
-/* ── hero, full bleed rotating ───────────────────────────── */
-.hero{position:relative;height:min(88svh,780px);min-height:490px;overflow:hidden;background:var(--navy)}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
-.slide.on{opacity:1}
-.slide img{width:100%;height:100%;object-fit:cover}
-.slide .veil{position:absolute;inset:0;background:
-  linear-gradient(105deg,rgba(0,43,84,.93) 0%,rgba(0,43,84,.74) 46%,rgba(0,43,84,.34) 100%)}
-.slide .inner{position:absolute;inset:0;display:flex;align-items:center}
-.slide .box{max-width:var(--max);margin:0 auto;padding:0 var(--pad);width:100%;color:#fff}
-.slide h1{color:#fff;font-weight:600;font-size:clamp(2.7rem,7.6vw,8.8rem);line-height:1.045;
-  letter-spacing:-.03em;max-width:12ch}
-.slide p{margin-top:20px;max-width:40ch;font-size:clamp(1.02rem,1.7vw,1.32rem);
-  font-weight:300;color:#DCE5EF}
-.slide .rule{width:56px;height:3px;background:var(--red);margin-bottom:26px}
-.dots{position:absolute;left:0;right:0;bottom:30px;z-index:6}
-.dotsin{max-width:var(--max);margin:0 auto;padding:0 var(--pad);display:flex;gap:10px}
-.dot{width:44px;height:3px;background:rgba(255,255,255,.32);border:0;cursor:pointer;padding:0;
-  transition:background .3s}
-.dot.on{background:var(--red)}
+/* hero */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{position:relative;min-height:clamp(520px,calc(86svh - var(--hh)),780px);display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:112px}
+.hero .copy{padding-left:clamp(30px,4vw,56px)}
+.hero h1{margin:0;font-family:'Sorts Mill Goudy',Georgia,serif;font-weight:400;font-size:clamp(2.6rem,6vw,5.2rem);line-height:1.04;letter-spacing:-.012em;max-width:20ch;color:#fff}
+.hero p{margin:28px 0 0;max-width:52ch;font-size:clamp(1.02rem,1.55vw,1.18rem);line-height:1.62;color:#C8D4E3}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:38px}
+.btn{display:inline-block;padding:15px 24px;border-radius:4px;font-weight:700;font-size:15px;line-height:1.2;text-decoration:none;background:#fff;color:var(--navy);transition:background .2s}
+.btn:hover{background:#E6ECF5}
+.btn.dark{background:var(--navy);color:#fff}
+.btn.dark:hover{background:var(--blue)}
+.textlink{font-weight:700;font-size:15px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+.hero .textlink{color:#fff}
+.hero .thread{position:absolute;left:var(--pad);top:clamp(64px,16%,132px);bottom:0;width:5px;margin-left:-2px;background:var(--red);transform-origin:50% 0;animation:drop 1.6s .2s cubic-bezier(.65,0,.25,1) both}
+.hero .knot{position:absolute;left:var(--pad);top:clamp(64px,16%,132px);width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:var(--red);box-shadow:0 0 0 7px rgba(233,38,47,.22)}
+@keyframes drop{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 
-/* ── news strip ──────────────────────────────────────────── */
-.news{background:var(--warm);border-bottom:1px solid var(--line)}
-.newsgrid{display:grid;gap:1px;background:var(--line)}
-@media(min-width:820px){.newsgrid{grid-template-columns:repeat(3,1fr)}}
-.ni{background:var(--warm);padding:30px clamp(20px,3vw,40px);text-decoration:none;
-  display:block;transition:background .3s}
-.ni:hover{background:#E6E1DD}
-.ni .meta{color:var(--blue);margin-bottom:12px;font-size:.68rem;letter-spacing:.2em;
-  text-transform:uppercase;font-weight:700}
-.ni .t{color:var(--navy);font-size:1.06rem;font-weight:600;line-height:1.34}
+/* the story */
+.journey{position:relative;height:620vh;background:var(--sky)}
+.stage{position:sticky;top:var(--hh);height:calc(100svh - var(--hh));min-height:440px;overflow:hidden;background:var(--sky)}
+.pane{position:absolute;inset:0;overflow:hidden;--focal:.64;--endy:.38}
+.world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform}
+.world svg{display:block;width:100%;height:100%}
 
-/* ── sections ────────────────────────────────────────────── */
-section{padding:clamp(64px,10vh,128px) 0}
-section.warm{background:var(--warm)}
-section.cool{background:var(--cool)}
-section.navy{background:var(--navy);color:#C6D3E1}
-section.navy h2,section.navy h3{color:#fff}
-.eyebrow{color:var(--blue);margin-bottom:20px;display:flex;align-items:center;gap:12px}
-section.navy .eyebrow{color:#7FA3CE}
-h2{font-size:clamp(1.9rem,4.4vw,3.5rem);font-weight:600;max-width:20ch}
-.intro{max-width:62ch;margin-top:22px;font-size:clamp(1.02rem,1.8vw,1.2rem);font-weight:300}
+.rail{position:absolute;z-index:3;top:0;left:0;right:0;height:60px;display:flex;align-items:center;gap:24px;padding:0 max(var(--pad),calc((100% - var(--max))/2 + var(--pad)));background:linear-gradient(var(--sky) 52%,rgba(237,242,249,0))}
+.rail ol{display:flex;gap:6px;margin:0;padding:0;list-style:none;flex:1;max-width:640px}
+.rail li{flex:1;min-width:0}
+.rail button{appearance:none;-webkit-appearance:none;border:0;background:none;width:100%;padding:8px 0 6px;text-align:left;cursor:pointer;font:700 13.5px/1.2 'Lato',sans-serif;color:var(--muted);white-space:nowrap}
+.rail button:hover,.rail button[aria-current="step"]{color:var(--navy)}
+.rail .track{display:block;height:3px;margin-top:8px;border-radius:2px;background:rgba(0,43,84,.14);overflow:hidden}
+.rail .track i{display:block;height:100%;background:var(--red);transform-origin:0 50%;transform:scaleX(var(--f,0))}
+.rail .skip{margin-left:auto;font-weight:700;font-size:14px;color:var(--blue);text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
 
-/* ── solutions carousel ──────────────────────────────────── */
-.rail{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;
-  padding:44px 0 14px;margin:0 calc(var(--pad) * -1);padding-left:var(--pad);
-  padding-right:var(--pad);scrollbar-width:none}
-.rail::-webkit-scrollbar{display:none}
-.card{flex:0 0 min(384px,84vw);scroll-snap-align:start;background:var(--white);
-  text-decoration:none;display:flex;flex-direction:column;transition:transform .4s}
-.card:hover{transform:translateY(-6px)}
-.card .ph{aspect-ratio:4/3;overflow:hidden;background:var(--navy);display:block}
-.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.3,1)}
-.card:hover .ph img{transform:scale(1.06)}
-.card .c{padding:26px 26px 30px;flex:1;display:flex;flex-direction:column}
-.card h3{font-size:1.44rem;font-weight:600;margin-bottom:12px}
-.card p{font-size:.96rem;font-weight:300;color:var(--stone)}
-.card .go{margin-top:auto;padding-top:22px;color:var(--blue);font-weight:700;
-  font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;display:flex;gap:9px;align-items:center}
-.card .go::after{content:"";width:16px;height:1px;background:var(--red);transition:width .3s}
-.card:hover .go::after{width:30px}
+.cards{position:absolute;z-index:2;left:max(var(--pad),calc((100% - var(--max))/2 + var(--pad)));top:80px;bottom:30px;width:min(440px,38vw);pointer-events:none}
+.card{position:absolute;left:0;top:0;width:100%;padding:26px 28px 24px;background:rgba(255,255,255,.94);border-radius:6px;box-shadow:0 24px 48px -26px rgba(0,43,84,.5);opacity:0;transform:translateY(16px);transition:opacity .45s ease,transform .45s ease;pointer-events:none}
+.card.on{opacity:1;transform:none;pointer-events:auto}
+.card.final{top:auto;bottom:0}
+.card .who{margin:0 0 10px;font-weight:700;font-size:15px;line-height:1.35;color:var(--blue)}
+.card h3{margin:0 0 14px;font-family:'Sorts Mill Goudy',Georgia,serif;font-weight:400;font-size:clamp(1.75rem,2.6vw,2.35rem);line-height:1.08;color:var(--navy)}
+.card p{margin:0;font-size:16px;line-height:1.62}
+.card .detail{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.card .btn{margin-top:20px}
 
-/* ── feature split ───────────────────────────────────────── */
-.feat{display:grid;gap:0;align-items:stretch;margin-top:clamp(40px,6vh,74px)}
-@media(min-width:960px){
-  .feat{grid-template-columns:1fr 1fr}
-  .feat.flip .fimg{order:-1}
+#worldSvg .pulse{stroke-width:3.5;stroke-linecap:round;stroke-dasharray:6 46;opacity:0;transition:opacity .5s;animation:flow 1.1s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-52}}
+#worldSvg .led{animation:blink 2.6s steps(1,end) infinite}
+@keyframes blink{0%,64%{opacity:1}65%,100%{opacity:.22}}
+#worldSvg .rays{transform-box:fill-box;transform-origin:center;animation:spin 70s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#worldSvg .waves{animation:wave 7s linear infinite}
+@keyframes wave{to{transform:translateX(-60px)}}
+#worldSvg .bob{transform-box:fill-box;transform-origin:50% 90%;animation:bob 6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(5px) rotate(.5deg)}}
+#worldSvg .bob2{animation:bob2 4.6s ease-in-out infinite}
+@keyframes bob2{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+#worldSvg .app{transition:opacity .35s,transform .35s;transform-box:fill-box;transform-origin:center}
+#worldSvg .app.off{opacity:0;transform:scale(.55)}
+#worldSvg #pTab{transition:none}
+#head .bit{display:none}
+#head.drill .dot,#head.drill .halo{display:none}
+#head.drill .bit{display:inline}
+#head .halo{transform-box:fill-box;transform-origin:center;animation:halo 1.8s ease-out infinite}
+@keyframes halo{0%{transform:scale(.5);opacity:.6}100%{transform:scale(1.8);opacity:0}}
+
+@media (max-width:860px){
+  .journey{height:560vh}
+  .pane{top:46px;bottom:auto;height:calc(57% - 46px);--focal:.5;--endy:.5}
+  .rail{height:46px;background:#fff;border-bottom:1px solid var(--line);gap:12px}
+  .rail ol{gap:4px;max-width:none}
+  .rail button{font-size:12.5px;padding-top:6px}
+  .rail .track{margin-top:6px}
+  .rail .skip{display:none}
+  .cards{left:0;right:0;width:auto;top:auto;bottom:0;height:43%}
+  .card{inset:0;height:100%;border-radius:0;box-shadow:none;background:#fff;padding:16px var(--pad) 14px;border-top:1px solid var(--line);overflow:hidden}
+  .card.final{top:0}
+  .card .who{font-size:13.5px;margin-bottom:6px}
+  .card h3{font-size:1.55rem;margin-bottom:10px}
+  .card p{font-size:15px;line-height:1.55}
+  .card .btn{margin-top:14px;padding:13px 20px}
 }
-.fimg{overflow:hidden;background:var(--navy);min-height:300px;aspect-ratio:4/3}
-.fimg img{width:100%;height:100%;object-fit:cover;min-height:300px}
-.ftext{background:var(--white);padding:clamp(32px,4.6vw,72px);display:flex;
-  flex-direction:column;justify-content:center}
-section.warm .ftext{background:var(--warm)}
-section.cool .ftext{background:var(--cool)}
-section.navy .ftext{background:transparent}
-.ftext h3{font-size:clamp(1.5rem,3vw,2.3rem);font-weight:600;margin-bottom:18px}
-.ftext p{font-weight:300;margin-bottom:15px}
-.ticks{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:12px}
-.ticks li{display:flex;gap:14px;align-items:flex-start;font-size:.97rem;font-weight:400}
-.ticks li::before{content:"";flex:none;width:9px;height:9px;margin-top:.52em;
-  border-left:2px solid var(--red);border-top:2px solid var(--red);transform:rotate(45deg)}
+@media (max-width:860px) and (max-height:780px){.card .detail{display:none}}
 
-/* ── stats ───────────────────────────────────────────────── */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));
-  gap:1px;background:rgba(255,255,255,.16);margin-top:clamp(40px,6vh,70px)}
-.st{background:var(--navy);padding:30px clamp(16px,2.2vw,30px)}
-.st .n{display:block;font-size:clamp(2.1rem,4.6vw,3.2rem);font-weight:300;color:#fff;
-  line-height:1;letter-spacing:-.03em}
-.st .l{display:block;margin-top:13px;color:#93A9C2;font-size:.72rem;letter-spacing:.18em;
-  text-transform:uppercase;font-weight:700;line-height:1.7}
+/* section heads */
+.sec-head{max-width:46rem;margin-bottom:clamp(30px,5vh,52px)}
+.sec-head h2,.contact h2{margin:0;font-family:'Sorts Mill Goudy',Georgia,serif;font-weight:400;font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:1.06;color:var(--navy)}
+.sec-head p{margin:16px 0 0;font-size:1.08rem;max-width:58ch}
 
-.photoband{position:relative;background:var(--navy);isolation:isolate}
-.photoband>.bg{position:absolute;inset:0;z-index:-2;overflow:hidden}
-.photoband>.bg img{width:100%;height:100%;object-fit:cover}
-.photoband::before{content:"";position:absolute;inset:0;z-index:-1;
-  background:linear-gradient(100deg,rgba(0,28,56,.95) 0%,rgba(0,43,84,.86) 52%,rgba(0,43,84,.62) 100%)}
+/* companies */
+.companies{padding:clamp(76px,12vh,132px) 0 clamp(48px,8vh,84px)}
+.company{display:grid;gap:clamp(26px,4vw,64px);align-items:center;padding:clamp(38px,6vh,66px) 0;border-top:1px solid var(--line)}
+@media (min-width:900px){
+  .company{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+  .company.flip .media{order:2}
+  .company.portrait{grid-template-columns:minmax(0,4fr) minmax(0,6fr)}
+}
+.media{margin:0}
+.media img{width:100%;height:auto;border-radius:4px;aspect-ratio:3/2;object-fit:cover;background:var(--pale)}
+.portrait .media img{aspect-ratio:4/5;max-height:640px;object-position:50% 25%}
+.company h3{margin:0;font-size:1.5rem;line-height:1.25;color:var(--ink);font-weight:900}
+.company .meta{margin:6px 0 18px;color:var(--muted);font-size:15px}
+.company .body>p{margin:0 0 16px}
+.branches{margin:4px 0 24px}
+.branches div{padding:12px 0;border-top:1px solid var(--line)}
+.branches dt{font-weight:700;color:var(--navy)}
+.branches dd{margin:2px 0 0;font-size:15.5px}
+.caps{margin:6px 0 0;padding:0;list-style:none;columns:2 230px;column-gap:28px}
+.caps li{padding:9px 0;border-top:1px solid var(--line);font-size:15px;break-inside:avoid}
+.hulls img{aspect-ratio:573/267;object-fit:cover}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.seg button{appearance:none;-webkit-appearance:none;border:1px solid #CBD3DE;background:#fff;color:var(--navy);font:700 14px/1 'Lato',sans-serif;padding:10px 15px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+.seg button:hover{border-color:var(--navy)}
+.seg button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.cap{margin:12px 0 0;font-size:15px;color:var(--muted)}
 
-/* ── quote band ──────────────────────────────────────────── */
-.quote{max-width:26ch;font-size:clamp(1.7rem,4vw,3.1rem);line-height:1.24;color:var(--navy)}
-section.navy .quote{color:#fff}
+/* work */
+.work{background:var(--pale);padding:clamp(76px,12vh,124px) 0}
+.sectors{display:grid;gap:44px 48px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.sector h3{margin:0 0 4px;padding-bottom:10px;border-bottom:2px solid var(--navy);font-size:1rem;font-weight:900;color:var(--navy)}
+.sector ul{list-style:none;margin:0;padding:0}
+.sector li{padding:11px 0;border-bottom:1px solid #D7DEE7}
+.sector b{display:block;color:var(--ink);font-weight:700;font-size:15.5px;line-height:1.35}
+.sector li span{display:block;font-size:14px;color:var(--muted);margin-top:2px}
+.principals{margin-top:clamp(60px,9vh,100px);padding-top:clamp(36px,6vh,56px);border-top:1px solid #D3DAE4;display:grid;gap:22px 56px}
+@media (min-width:900px){.principals{grid-template-columns:minmax(0,4fr) minmax(0,8fr)}}
+.principals h3{margin:0;font-family:'Sorts Mill Goudy',Georgia,serif;font-weight:400;font-size:2rem;color:var(--navy);line-height:1.1}
+.principals p{margin:12px 0 0;font-size:15.5px;max-width:40ch}
+.brands{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:14px 32px;align-content:flex-start}
+.brands li{font-weight:900;font-size:1.18rem;color:var(--navy)}
+.brands li small{font-weight:400;font-size:.78rem;color:var(--muted);margin-left:6px}
 
-/* ── project grid ────────────────────────────────────────── */
-.projs{display:grid;gap:1px;background:var(--line);margin-top:44px;border-top:1px solid var(--line)}
-@media(min-width:680px){.projs{grid-template-columns:1fr 1fr}}
-@media(min-width:1080px){.projs{grid-template-columns:repeat(3,1fr)}}
-.pj{background:var(--white);padding:24px 26px;transition:background .25s}
-section.warm .pj{background:var(--warm)}
-section.cool .pj{background:var(--cool)}
-.pj:hover{background:var(--navy)}
-.pj:hover .nm,.pj:hover .m{color:#fff}
-.pj .nm{color:var(--navy);font-size:1.02rem;font-weight:600;line-height:1.32}
-.pj .m{display:block;margin-top:8px;font-size:.8rem;color:#7C7772;letter-spacing:.02em}
+/* contact */
+.contact{padding:clamp(76px,12vh,124px) 0}
+.contact .grid{display:grid;gap:40px 72px}
+@media (min-width:900px){.contact .grid{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}}
+.contact .grid>div>p{max-width:48ch;margin:18px 0 28px;font-size:1.06rem}
+.clist{margin:0}
+.clist div{padding:16px 0;border-top:1px solid var(--line)}
+.clist dt{font-size:14px;color:var(--muted)}
+.clist dd{margin:4px 0 0;font-weight:700;color:var(--ink);font-size:1.05rem;line-height:1.5}
+.clist a{color:var(--blue);text-decoration:none}
+.clist a:hover{text-decoration:underline}
 
-/* ── vessel cards ────────────────────────────────────────── */
-.fleet{display:grid;gap:22px;margin-top:46px}
-@media(min-width:640px){.fleet{grid-template-columns:1fr 1fr}}
-@media(min-width:1060px){.fleet{grid-template-columns:repeat(3,1fr)}}
-.boat{background:var(--white);transition:transform .4s}
-section.cool .boat{background:var(--white)}
-.boat:hover{transform:translateY(-5px)}
-.boat img{width:100%;aspect-ratio:16/9;object-fit:cover;background:var(--navy)}
-.boat .c{padding:20px 24px 26px}
-.boat .len{color:var(--blue);font-size:.72rem;letter-spacing:.18em;font-weight:700;text-transform:uppercase}
-.boat .nm{color:var(--navy);font-size:1.14rem;font-weight:600;margin:7px 0 5px}
-.boat .u{font-size:.9rem;font-weight:300}
+/* footer */
+.foot{background:var(--navy-2);color:#9DB0C6;padding:50px 0 42px}
+.foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:22px}
+.flogo{height:21px;width:auto;filter:brightness(0) invert(1)}
+.foot nav{display:flex;flex-wrap:wrap;gap:24px}
+.foot nav a{color:#DCE5EF;text-decoration:none;font-weight:700;font-size:15px}
+.foot nav a:hover{text-decoration:underline}
+.credits{margin:32px 0 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:13.5px;max-width:92ch;line-height:1.7}
+.credits a{color:#DCE5EF}
+.copy{margin:12px 0 0;font-size:13.5px}
 
-/* ── capability ──────────────────────────────────────────── */
-.caps{display:grid;gap:1px;background:rgba(255,255,255,.16);margin-top:46px}
-@media(min-width:760px){.caps{grid-template-columns:1fr 1fr}}
-@media(min-width:1120px){.caps{grid-template-columns:repeat(3,1fr)}}
-.cap{background:var(--navy);padding:30px clamp(22px,2.4vw,34px)}
-.cap h4{color:#fff;font-size:1.1rem;font-weight:600;margin-bottom:11px}
-.cap p{font-size:.93rem;font-weight:300;color:#AFC0D3}
-
-/* ── brands ──────────────────────────────────────────────── */
-.brands{display:flex;flex-wrap:wrap;gap:11px;margin-top:38px}
-.brands li{list-style:none;border:1px solid var(--line);padding:12px 20px;font-size:.93rem;
-  font-weight:600;color:var(--navy);background:var(--white);transition:.25s}
-.brands li:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
-.brands li.own{border-color:var(--red)}
-
-/* ── timeline ────────────────────────────────────────────── */
-.tl{margin-top:44px;border-top:1px solid rgba(255,255,255,.2)}
-.tlrow{display:grid;grid-template-columns:9ch 1fr;gap:clamp(18px,4vw,56px);padding:24px 0;
-  border-bottom:1px solid rgba(255,255,255,.2);align-items:baseline}
-.tlrow .yr{color:#7FA3CE;font-size:.94rem;font-weight:700;letter-spacing:.1em}
-.tlrow b{display:block;color:#fff;font-size:1.12rem;font-weight:600;margin-bottom:6px}
-.tlrow .ev{font-weight:300;max-width:66ch;color:#B9C8D9}
-
-/* ── contact ─────────────────────────────────────────────── */
-.contact{display:grid;gap:clamp(30px,5vw,70px);margin-top:42px}
-@media(min-width:880px){.contact{grid-template-columns:1.05fr 1fr}}
-.cb{padding:20px 0;border-top:1px solid var(--line)}
-.cb .k{display:block;color:#7C7772;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
-  font-weight:700;margin-bottom:7px}
-.cb .v{color:var(--navy);font-size:1.08rem;font-weight:600}
-.cb a{color:var(--blue);text-decoration:none}
-.cb a:hover{text-decoration:underline}
-.btn{display:inline-flex;align-items:center;gap:14px;margin-top:26px;padding:18px 34px;
-  background:var(--navy);color:#fff;text-decoration:none;font-weight:700;font-size:.82rem;
-  letter-spacing:.14em;text-transform:uppercase;transition:background .25s}
-.btn:hover{background:var(--blue)}
-.btn::after{content:"";width:22px;height:1px;background:var(--red)}
-
-/* ── footer ──────────────────────────────────────────────── */
-footer{background:var(--navy-deep);color:#93A9C2;padding:60px 0 34px}
-footer .top{display:grid;gap:40px}
-@media(min-width:900px){footer .top{grid-template-columns:1.4fr 1fr 1fr}}
-footer img.fl{height:26px;filter:brightness(0) invert(1);opacity:.95;margin-bottom:20px}
-footer p{font-weight:300;font-size:.95rem;max-width:44ch}
-footer h5{color:#fff;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
-  font-weight:700;margin-bottom:16px}
-footer ul{list-style:none;display:flex;flex-direction:column;gap:11px}
-footer ul a{text-decoration:none;font-size:.93rem;font-weight:300;transition:color .2s}
-footer ul a:hover{color:#fff}
-.legal{margin-top:48px;padding-top:24px;border-top:1px solid rgba(255,255,255,.13);
-  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.8rem;font-weight:300}
-.note{margin-top:18px;font-size:.74rem;color:#5F758F;font-weight:300;max-width:88ch;line-height:1.7}
-
-.rise{opacity:0;transform:translateY(22px);
-  transition:opacity .85s cubic-bezier(.2,.7,.3,1),transform .85s cubic-bezier(.2,.7,.3,1)}
-.rise.in{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  .rise{opacity:1;transform:none}
-  .slide{transition:none}
+@media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
 }
-:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 </style>
+<noscript><style>
+.journey{height:auto}.stage{position:relative;top:0;height:auto}.pane{position:relative;height:auto}
+.world{position:static}.world svg{width:100%;height:auto}.rail{display:none}
+.cards{position:static;width:auto;padding:24px var(--pad);pointer-events:auto}
+.card{position:static;opacity:1;transform:none;margin:0 0 16px;box-shadow:none;border:1px solid var(--line)}
+</style></noscript>
 </head>
 <body>
-
-<div class="util">
-  <div class="utilin">
-    <a href="#group">About us</a>
-    <a href="#history">History</a>
-    <a href="#news">Media</a>
-    <a href="#contact">Contact</a>
-  </div>
-</div>
-
-<header>
-  <div class="headin">
-    <a class="logo" href="#top" aria-label="Brantel Group home">
-      <img src="data:image/png;base64,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" alt="Brantel">
-    </a>
-    <nav class="mainnav">
-      <a href="#technology">Energy and technology</a>
-      <a href="#marine">Marine</a>
-      <a href="#resources">Mineral resources</a>
-      <a href="#projects">Projects</a>
-      <a href="#group">About</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Brantel Group, back to the top"><img src="data:image/png;base64,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" alt="Brantel" width="218" height="22"></a>
+    <nav aria-label="Main">
+      <a href="#story">The story</a>
+      <a href="#companies">Companies</a>
+      <a href="#work">Work</a>
+      <a class="keep" href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
-<div class="hero" id="top">
-  <div class="slide on" data-s="0">
-    <img loading="eager" fetchpriority="high" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/2015-_Trademart_Brussels%2C_Bruxelles%2C_Belgium_%28_Ank_Kumar_%29_01.jpg/1920px-2015-_Trademart_Brussels%2C_Bruxelles%2C_Belgium_%28_Ank_Kumar_%29_01.jpg" alt="Large rooftop photovoltaic array on a commercial building">
-    <span class="veil"></span>
-    <div class="inner"><div class="box">
-      <div class="rule"></div>
-      <h1>Power and networks</h1>
-      <p>Solar generation, optical infrastructure and enterprise computing, delivered across
-        Sri Lanka for twenty two years.</p>
-    </div></div>
-  </div>
-  <div class="slide" data-s="1">
-    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/SL_Kalpitiya_asv2020-01_img4_Fishery_harbour.jpg/1920px-SL_Kalpitiya_asv2020-01_img4_Fishery_harbour.jpg" alt="Fishing vessels moored at a Sri Lankan fishery harbour">
-    <span class="veil"></span>
-    <div class="inner"><div class="box">
-      <div class="rule"></div>
-      <h1>Vessels for export</h1>
-      <p>Fibreglass hulls from 6 to 20 metres, built at Dikkowita for the fishing fleet and
-        for markets beyond it.</p>
-    </div></div>
-  </div>
-  <div class="slide" data-s="2">
-    <img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sunrise_Dam_Gold_Mine_open_pit_04.jpg/1920px-Sunrise_Dam_Gold_Mine_open_pit_04.jpg" alt="Open pit mine">
-    <span class="veil"></span>
-    <div class="inner"><div class="box">
-      <div class="rule"></div>
-      <h1>Ground to feasibility</h1>
-      <p>Exploration and open pit mining for heavy mineral sands, chromite, manganese, copper
-        and iron ore.</p>
-    </div></div>
-  </div>
-  <div class="dots"><div class="dotsin">
-    <button class="dot on" data-g="0" aria-label="Show energy and technology"></button>
-    <button class="dot" data-g="1" aria-label="Show marine"></button>
-    <button class="dot" data-g="2" aria-label="Show mineral resources"></button>
-  </div></div>
-</div>
-
-<div class="news" id="news">
-  <div class="wrap" style="padding:0">
-    <div class="newsgrid">
-      <a class="ni" href="#marine">
-        <span class="meta">Marine | 2023</span>
-        <span class="t">NorthWest Marine opens its purpose built yard at Dikkowita International Fisheries Harbour</span>
-      </a>
-      <a class="ni" href="#technology">
-        <span class="meta">Energy | Roadshow</span>
-        <span class="t">GoodWe technical training reaches Jaffna, Pasikudah and Wadduwa for installers island wide</span>
-      </a>
-      <a class="ni" href="#resources">
-        <span class="meta">Resources | Oman</span>
-        <span class="t">Exploration programmes extend across Africa, Australasia and the Middle East</span>
-      </a>
-    </div>
-  </div>
-</div>
-
-<section id="group" class="warm">
-  <div class="wrap">
-    <p class="eyebrow label rise">The group</p>
-    <h2 class="rise">Every day we put <span class="serif">power, data and hulls</span> into service.</h2>
-    <p class="intro rise">Brantel Group operates three companies across energy and technology,
-      marine manufacturing, and mineral exploration and mining. Each holds its own licences,
-      staff and customers. What they share is the habit of owning the whole line, from the
-      supply agreement through the build to the service afterwards.</p>
-
-    <div class="rail">
-      <a class="card rise" href="#technology">
-        <span class="ph"><img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Installation_of_photovoltaic_modules_on_roof.jpg/1920px-Installation_of_photovoltaic_modules_on_roof.jpg" alt="Technicians installing photovoltaic modules on a roof"></span>
-        <span class="c">
-          <h3>Energy and technology</h3>
-          <p>National distribution and turnkey delivery of solar generation, optical and
-            enterprise networks, and corporate computing, trading as Brantel Lanka since 2004.</p>
-          <span class="go">Explore</span>
-        </span>
-      </a>
-      <a class="card rise" href="#marine">
-        <span class="ph"><img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/passenger-boat.jpg" alt="Passenger boat built by NorthWest Marine"></span>
-        <span class="c">
-          <h3>Marine manufacturing</h3>
-          <p>Fibreglass vessel construction and marine engineering services, trading as
-            NorthWest Marine Lanka since 2006 from a yard at Dikkowita.</p>
-          <span class="go">Explore</span>
-        </span>
-      </a>
-      <a class="card rise" href="#resources">
-        <span class="ph"><img loading="lazy" decoding="async" src="https://live.staticflickr.com/2104/2405635877_5682c63e55_b.jpg" alt="Exploration drilling rig mast"></span>
-        <span class="c">
-          <h3>Mineral resources</h3>
-          <p>Exploration, resource definition and open pit mining on the group's own projects
-            and under contract, from offices in Sri Lanka and Oman.</p>
-          <span class="go">Explore</span>
-        </span>
-      </a>
-      <a class="card rise" href="#projects">
-        <span class="ph"><img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Colombo_Skyline_Jan_2022.jpg/1920px-Colombo_Skyline_Jan_2022.jpg" alt="Colombo skyline"></span>
-        <span class="c">
-          <h3>Selected work</h3>
-          <p>Optical and network infrastructure in national landmarks, government buildings,
-            hospitals, universities and resorts across the island.</p>
-          <span class="go">Explore</span>
-        </span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="navy photoband">
-  <div class="bg"><img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Beautiful_Sunrise_over_the_Colombo_Skyline_as_seen_from_the_ocean.jpg/1920px-Beautiful_Sunrise_over_the_Colombo_Skyline_as_seen_from_the_ocean.jpg" alt="Sunrise over the Colombo skyline seen from the ocean"></div>
-  <div class="wrap">
-    <p class="eyebrow label rise">At a glance</p>
-    <p class="quote rise">A hospital network, a 500 kW array and a 20 metre longline hull,
-      all from the same group.</p>
-    <div class="stats">
-      <div class="st rise"><span class="n">22</span><span class="l">Years trading</span></div>
-      <div class="st rise"><span class="n">2,000+</span><span class="l">Business partners</span></div>
-      <div class="st rise"><span class="n">14</span><span class="l">Principal brands</span></div>
-      <div class="st rise"><span class="n">7</span><span class="l">Vessel classes</span></div>
-      <div class="st rise"><span class="n">3</span><span class="l">Regions of operation</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="technology">
-  <div class="wrap">
-    <p class="eyebrow label rise">Energy and technology</p>
-    <h2 class="rise">Brantel Lanka</h2>
-  </div>
-  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
-    <div class="feat rise">
-      <div class="fimg"><img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Solar_Sharing_Power_Plant_in_Kamisu%2C_Ibaraki_04.jpg/1920px-Solar_Sharing_Power_Plant_in_Kamisu%2C_Ibaraki_04.jpg" alt="Ground mounted solar array"></div>
-      <div class="ftext">
-        <h3>Supplying the corporate sector since 2004</h3>
-        <p>The company entered the market as appointed agent for Lenovo, launched its own
-          E-TEL device brand in 2008, and opened an enterprise division in 2014 for servers,
-          thin clients, mini PCs and custom software.</p>
-        <p>It is national distributor for Corning, Cisco, GoodWe, SMA, Deye, SolarEdge and
-          JA Solar among others, with branches, dealers and service centres across the island
-          and technical teams who commission what they sell.</p>
-        <ul class="ticks">
-          <li>Rooftop and ground mounted solar to 500 kW</li>
-          <li>Corning optical and Cisco structured cabling</li>
-          <li>Smartboards, servers, mini PCs and thin clients</li>
-          <li>Installer training roadshows nationwide</li>
-        </ul>
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="thread" aria-hidden="true"></span><span class="knot" aria-hidden="true"></span>
+      <div class="copy">
+        <h1 id="hero-title">One line runs through everything we build.</h1>
+        <p>Brantel entered the market in 2004 as Lenovo's agent for Sri Lanka. Today the group runs five businesses across phones, solar power, networks, vessels and minerals. Scroll down and follow the red line from one to the next.</p>
+        <div class="actions">
+          <a class="btn" href="#story">Follow the line</a>
+          <a class="textlink" href="#companies">Skip to the companies</a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="marine" class="cool">
-  <div class="wrap">
-    <p class="eyebrow label rise">Marine manufacturing</p>
-    <h2 class="rise">NorthWest Marine Lanka</h2>
-  </div>
-  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
-    <div class="feat flip rise">
-      <div class="fimg"><img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/9meter_boat.jpg" alt="Fishing vessel with forward cabin"></div>
-      <div class="ftext">
-        <h3>Built at Dikkowita, sold beyond it</h3>
-        <p>The company started in 2006 at the Industrial Development Board estate in Dankotuwa
-          with a small team of craftsmen and the aim of building longline fibreglass hulls good
-          enough to export. In 2023 it moved into a purpose built yard opposite Dikkowita
-          International Fisheries Harbour.</p>
-        <p>Alongside the boats it provides marine engineering to the Sri Lankan fishing
-          community: maintenance contracts, vessel operation contracts, longline advisory work,
-          ice and fish processing plant installation, and supply of gear, engines, generators
-          and spares.</p>
-        <ul class="ticks">
-          <li>Fishing, workboat, passenger and leisure hulls</li>
-          <li>Multi day longline vessels for offshore work</li>
-          <li>Ice plants and fish processing plants installed</li>
-          <li>Project planning for the fisheries sector</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
-    <div class="feat rise">
-      <div class="fimg"><img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/SL_Kalpitiya_asv2020-01_img5_Fishery_harbour.jpg/1920px-SL_Kalpitiya_asv2020-01_img5_Fishery_harbour.jpg" alt="Fishing vessels moored at a Sri Lankan fishery harbour"></div>
-      <div class="ftext">
-        <h3>Working for the fleet that works the coast</h3>
-        <p>Most of what leaves the yard goes to Sri Lankan owners running multi day trips out
-          of harbours like this one. The engineering side of the business keeps those vessels
-          at sea, with maintenance and operation contracts, gear and spares, and advisory work
-          on longline methods.</p>
-        <p>The same capability builds the shore infrastructure behind the fleet, from ice
-          plants and fish processing plants to project planning for the sector.</p>
-      </div>
-    </div>
-  </div>
-  <div class="wrap">
-    <div class="fleet">
-      <article class="boat rise">
-        <img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/56ft_longline_fishing_vessel.jpg" alt="Twenty metre multi day fishing vessel">
-        <div class="c"><span class="len">20.0 m</span><p class="nm">Multi day fishing vessel</p><p class="u">Offshore longline</p></div>
+  <section class="journey" id="story" aria-labelledby="story-title">
+    <h2 id="story-title" class="vh">The story</h2>
+    <div class="stage">
+      <div class="pane"><div class="world">
+<svg id="worldSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7200 1000" width="7200" height="1000" role="img"
+  aria-label="An illustrated journey. A phone on a charging dock, a cold store with solar panels on its roof, a server rack in a data room with Lotus Tower behind it, a NorthWest Marine fishing vessel at a quay with its longline out, and a drill rig sampling heavy mineral sands. One red line connects them all.">
+
+<defs>
+  <linearGradient id="gSky" x1="0" y1="0" x2="7200" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#EDF2F9"/><stop offset=".5" stop-color="#E7EEF8"/>
+    <stop offset=".7" stop-color="#E2ECF7"/><stop offset=".84" stop-color="#EFEBE5"/>
+    <stop offset="1" stop-color="#F3EEE7"/>
+  </linearGradient>
+  <linearGradient id="gHaze" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".65"/>
+  </linearGradient>
+  <linearGradient id="gSea" x1="0" y1="742" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#C4D5E8"/><stop offset="1" stop-color="#8AA5C2"/>
+  </linearGradient>
+  <linearGradient id="gScreen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#4864BA"/><stop offset="1" stop-color="#21387A"/>
+  </linearGradient>
+  <radialGradient id="gSun">
+    <stop offset="0" stop-color="#F7CF63" stop-opacity=".6"/><stop offset="1" stop-color="#F7CF63" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="pHms" width="26" height="26" patternUnits="userSpaceOnUse">
+    <rect width="26" height="26" fill="#2F3543"/>
+    <circle cx="5" cy="7" r="1.7" fill="#8A93A6"/><circle cx="17" cy="4" r="1.3" fill="#C2B184"/>
+    <circle cx="12" cy="18" r="1.5" fill="#8A93A6"/><circle cx="22" cy="21" r="1.2" fill="#D0C094"/>
+  </pattern>
+  <pattern id="pHatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="14" height="14" fill="#E4E9F0"/><line x1="0" y1="0" x2="0" y2="14" stroke="#9AA8BA" stroke-width="2.4"/>
+  </pattern>
+  <linearGradient id="gFade" x1="5950" y1="0" x2="6190" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/>
+  </linearGradient>
+  <mask id="mStrata"><rect x="5880" y="700" width="1320" height="300" fill="url(#gFade)"/></mask>
+  <clipPath id="cSea"><rect x="4520" y="730" width="1480" height="270"/></clipPath>
+  <clipPath id="cHull"><path d="M4730 598 L4742 760 C4760 776 4800 786 4880 790 L5160 792 C5240 790 5290 776 5322 744 C5350 700 5376 630 5394 566 C5250 572 4960 588 4730 598 Z"/></clipPath>
+</defs>
+
+<rect width="7200" height="1000" fill="url(#gSky)"/>
+<rect y="430" width="7200" height="300" fill="url(#gHaze)"/>
+<g id="far">
+<g fill="#E0E7F1">
+<rect x="30" y="509" width="109" height="213" fill="#E2E9F2"/>
+<rect x="141" y="521" width="75" height="201" fill="#E2E9F2"/>
+<rect x="212" y="575" width="109" height="147" fill="#DCE4EF"/>
+<rect x="234" y="513" width="64" height="62" fill="#DCE4EF"/>
+<line x1="266" y1="575" x2="266" y2="529" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="336" y="485" width="109" height="237" fill="#E6ECF4"/>
+<line x1="390" y1="485" x2="390" y2="439" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="435" y="636" width="119" height="86" fill="#DCE4EF"/>
+<rect x="458" y="576" width="73" height="60" fill="#DCE4EF"/>
+<line x1="494" y1="636" x2="494" y2="590" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="573" y="540" width="93" height="182" fill="#E6ECF4"/>
+<rect x="674" y="651" width="115" height="71" fill="#E6ECF4"/>
+<rect x="700" y="603" width="62" height="48" fill="#E6ECF4"/>
+<rect x="784" y="572" width="84" height="150" fill="#DCE4EF"/>
+<line x1="826" y1="572" x2="826" y2="526" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="864" y="625" width="103" height="97" fill="#E2E9F2"/>
+<rect x="957" y="599" width="79" height="123" fill="#DCE4EF"/>
+<rect x="1051" y="634" width="105" height="88" fill="#E6ECF4"/>
+<rect x="1163" y="630" width="95" height="92" fill="#E2E9F2"/>
+<rect x="1180" y="601" width="60" height="29" fill="#E2E9F2"/>
+<line x1="1210" y1="630" x2="1210" y2="584" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="1254" y="637" width="53" height="85" fill="#E2E9F2"/>
+<line x1="1280" y1="637" x2="1280" y2="591" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="1309" y="522" width="109" height="200" fill="#DCE4EF"/>
+<rect x="1434" y="623" width="101" height="99" fill="#E2E9F2"/>
+<rect x="1542" y="575" width="127" height="147" fill="#DCE4EF"/>
+<rect x="1576" y="515" width="59" height="60" fill="#DCE4EF"/>
+<rect x="1665" y="615" width="57" height="107" fill="#DCE4EF"/>
+<line x1="1693" y1="615" x2="1693" y2="569" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="1733" y="554" width="89" height="168" fill="#DCE4EF"/>
+<rect x="1759" y="492" width="36" height="62" fill="#DCE4EF"/>
+<rect x="1835" y="493" width="99" height="229" fill="#E2E9F2"/>
+<rect x="1858" y="435" width="52" height="58" fill="#E2E9F2"/>
+<line x1="1884" y1="493" x2="1884" y2="447" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="2140" y="492" width="75" height="230" fill="#DCE4EF"/>
+<rect x="2162" y="431" width="31" height="61" fill="#DCE4EF"/>
+<rect x="2217" y="491" width="72" height="231" fill="#E6ECF4"/>
+<rect x="2230" y="439" width="45" height="52" fill="#E6ECF4"/>
+<rect x="2305" y="626" width="58" height="96" fill="#DCE4EF"/>
+<rect x="2315" y="589" width="37" height="37" fill="#DCE4EF"/>
+<rect x="2378" y="545" width="84" height="177" fill="#E6ECF4"/>
+<rect x="2456" y="594" width="68" height="128" fill="#E2E9F2"/>
+<rect x="2518" y="598" width="87" height="124" fill="#DCE4EF"/>
+<line x1="2561" y1="598" x2="2561" y2="552" stroke="#D2DBE7" stroke-width="3"/>
+<rect x="2621" y="589" width="109" height="133" fill="#DCE4EF"/>
+<rect x="2652" y="534" width="47" height="55" fill="#DCE4EF"/>
+</g>
+
+<g id="lotus" fill="#DAE2EE" stroke="#B3C0D2" stroke-width="2.6" stroke-linejoin="round">
+  <rect x="1986" y="684" width="128" height="38" rx="4"/>
+  <polygon points="2035,684 2065,684 2059,300 2041,300"/>
+  <path d="M2050 138 C2008 170 1994 234 2014 302 L2086 302 C2106 234 2092 170 2050 138 Z"/>
+  <path d="M2050 148 C2032 192 2030 252 2040 302 M2050 148 C2068 192 2070 252 2060 302" fill="none"/>
+  <rect x="2010" y="296" width="80" height="12" rx="3"/>
+  <polygon points="2045,140 2055,140 2051,36 2049,36"/>
+</g>
+
+<g fill="#C9D3E0">
+  <path d="M3490 738 L3500 722 H3622 L3630 722 L3618 738 Z"/>
+  <rect x="3592" y="700" width="22" height="22"/><rect x="3520" y="708" width="60" height="14"/>
+</g>
+
+<path d="M3700 745 C3820 700 3940 682 4060 704 C4180 724 4260 660 4400 650 C4560 640 4640 700 4780 702 C4900 704 4960 668 5080 676 L5080 745 Z" fill="#EAE4DB"/>
+<path d="M3640 745 C3760 716 3860 708 3960 722 C4060 736 4140 690 4280 686 C4420 682 4500 716 4640 718 C4780 720 4860 690 5000 696 L5000 745 Z" fill="#E3DCD0"/>
+</g>
+
+<g id="sun" transform="translate(2640 600)">
+  <circle r="150" fill="url(#gSun)"/>
+  <g class="rays" stroke="#EFB43C" stroke-width="6" stroke-linecap="round"><line x1="62.0" y1="0.0" x2="84.0" y2="0.0"/><line x1="53.7" y1="31.0" x2="72.7" y2="42.0"/><line x1="31.0" y1="53.7" x2="42.0" y2="72.7"/><line x1="0.0" y1="62.0" x2="0.0" y2="84.0"/><line x1="-31.0" y1="53.7" x2="-42.0" y2="72.7"/><line x1="-53.7" y1="31.0" x2="-72.7" y2="42.0"/><line x1="-62.0" y1="0.0" x2="-84.0" y2="0.0"/><line x1="-53.7" y1="-31.0" x2="-72.7" y2="-42.0"/><line x1="-31.0" y1="-53.7" x2="-42.0" y2="-72.7"/><line x1="-0.0" y1="-62.0" x2="-0.0" y2="-84.0"/><line x1="31.0" y1="-53.7" x2="42.0" y2="-72.7"/><line x1="53.7" y1="-31.0" x2="72.7" y2="-42.0"/></g>
+  <circle r="44" fill="#F5C451" stroke="#E5A733" stroke-width="3"/>
+</g>
+
+<g id="earth">
+  <rect x="0" y="720" width="4520" height="280" fill="#E9E2D8"/>
+  <rect x="0" y="720" width="4300" height="14" fill="#DDD3C5"/>
+  <rect x="4300" y="720" width="172" height="28" fill="#D5DCE5"/>
+  <path d="M0 812H4470M0 930H4470" stroke="#D6CCBE" stroke-width="2.6" stroke-dasharray="16 14"/>
+  <rect x="4520" y="742" width="1500" height="258" fill="url(#gSea)"/>
+  <path d="M4520 1000V968C4800 958 5200 978 5480 966C5600 961 5680 962 5720 960V1000Z" fill="#D8CBB8"/>
+  <g clip-path="url(#cSea)"><g class="waves"><path d="M4440 742 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0" fill="none" stroke="#002B54" stroke-width="2.6" stroke-opacity="0.55" stroke-linecap="round"/><path d="M4470 774 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0" fill="none" stroke="#002B54" stroke-width="2.6" stroke-opacity="0.22" stroke-linecap="round"/><path d="M4440 812 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0 q30 -8 60 0" fill="none" stroke="#002B54" stroke-width="2.6" stroke-opacity="0.12" stroke-linecap="round"/></g></g>
+  <path d="M5700 1000V960C5780 955 5840 880 5880 800C5910 760 5960 728 6040 720H7200V1000Z" fill="#E9E2D8"/>
+  <g mask="url(#mStrata)">
+    <path d="M5880 720H7200V746C6900 740 6500 750 5880 744Z" fill="#CDBFAA"/>
+    <path d="M5880 744C6500 750 6900 740 7200 746V828C6900 820 6500 834 5880 826Z" fill="#EADFC8"/>
+    <path d="M5880 826C6500 834 6900 820 7200 828V884C6900 878 6500 890 5880 882Z" fill="url(#pHms)"/>
+    <path d="M5880 882C6500 890 6900 878 7200 884V938C6900 932 6500 944 5880 936Z" fill="#CDB89D"/>
+    <path d="M5880 936C6500 944 6900 932 7200 938V1000H5880Z" fill="#A69D8F"/>
+    <path d="M6080 962l30 18 22-10M6640 954l-26 22M7010 950l24 16 30-8M6260 975l18-12" stroke="#8A8173" stroke-width="2.6" fill="none"/>
+  </g>
+  <path d="M0 720H4470" stroke="#002B54" stroke-width="3.5"/>
+  <path d="M5880 800C5910 760 5960 728 6040 720H7200" stroke="#002B54" stroke-width="3.5" fill="none"/>
+  <!-- data room interior, behind the thread -->
+  <rect x="3582" y="122" width="396" height="598" fill="#F6F8FB"/>
+</g>
+<path id="thread" d="M1306 698 C1336 698 1350 710 1354 730 C1360 770 1376 860 1440 860 L2160 860 C2204 860 2216 842 2216 806 L2216 470 Q2216 446 2240 446 L2888 446 Q2913 446 2913 470 L2913 706 C2913 770 2950 860 3020 860 L3556 860 C3600 860 3612 842 3612 806 L3612 162 Q3612 138 3636 138 L3706 138 Q3730 138 3730 162 L3730 686 C3730 702 3800 698 3800 722 C3800 780 3830 860 3900 860 L4380 860 C4424 860 4440 840 4440 800 L4440 724 Q4440 712 4452 712 L4468 712 C4476 712 4478 702 4481 696 C4560 782 4670 770 4742 612 L5372 586 L5386 586 C5430 590 5452 640 5468 690 C5480 724 5500 742 5530 744 L5580 740 Q5640 756 5700 740 Q5760 756 5820 740 Q5880 730 5940 738 C5980 742 6010 722 6050 716 L6340 714 Q6356 714 6356 698 L6356 228 C6356 186 6400 184 6400 214 L6400 872" fill="none" stroke="#E9262F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="pulseA" class="pulse" fill="none" stroke="#FFFFFF" d="M2216 470Q2216 446 2240 446H2888Q2913 446 2913 470V640"/>
+<path id="pulseB" class="pulse" fill="none" stroke="#FFFFFF" d="M3612 600V162Q3612 138 3636 138H3706Q3730 138 3730 162V196"/>
+<g id="fg" stroke="#002B54" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+
+<g id="scene-phone">
+  <g id="pTab" opacity="0">
+    <line x1="1716" y1="470" x2="1770" y2="718"/>
+    <rect x="1480" y="314" width="304" height="402" rx="24" fill="#FFFFFF"/>
+    <rect x="1498" y="334" width="268" height="362" rx="10" fill="url(#gScreen)" stroke="none"/>
+    <rect x="1520" y="358" width="120" height="14" rx="7" fill="#FFFFFF" fill-opacity=".55" stroke="none"/>
+    <rect x="1520" y="384" width="74" height="10" rx="5" fill="#FFFFFF" fill-opacity=".3" stroke="none"/>
+    <rect x="1522" y="598" width="30" height="70" rx="3" fill="#FFFFFF" fill-opacity="0.35" stroke="none"/><rect x="1568" y="564" width="30" height="104" rx="3" fill="#FFFFFF" fill-opacity="0.35" stroke="none"/><rect x="1614" y="530" width="30" height="138" rx="3" fill="#FFFFFF" fill-opacity="0.35" stroke="none"/><rect x="1660" y="492" width="30" height="176" rx="3" fill="#FFFFFF" fill-opacity="0.35" stroke="none"/><rect x="1706" y="446" width="30" height="222" rx="3" fill="#FFFFFF" fill-opacity="0.9" stroke="none"/>
+    <line x1="1514" y1="670" x2="1752" y2="670" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2.5"/>
+    <circle cx="1632" cy="324" r="3.5" fill="#002B54" stroke="none"/>
+  </g>
+  <path d="M1188 720 L1204 654 L1296 654 L1312 720 Z" fill="#FFFFFF"/>
+  <line x1="1206" y1="676" x2="1294" y2="676" stroke-opacity=".35" stroke-width="2.5"/>
+  <g id="pKey">
+    <rect x="1290" y="288" width="20" height="40" rx="7" fill="#FFFFFF"/>
+    <rect x="1172" y="318" width="156" height="336" rx="28" fill="#FFFFFF"/>
+    <line x1="1226" y1="340" x2="1274" y2="340"/>
+    <rect x="1192" y="356" width="116" height="88" rx="7" fill="#B9C6AF" stroke-width="2.6"/>
+    <rect x="1200" y="384" width="5" height="6" fill="#55654C" stroke="none"/><rect x="1207" y="380" width="5" height="10" fill="#55654C" stroke="none"/><rect x="1214" y="376" width="5" height="14" fill="#55654C" stroke="none"/><rect x="1221" y="372" width="5" height="18" fill="#55654C" stroke="none"/><rect x="1206" y="402" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1220" y="402" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1234" y="402" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1248" y="402" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1262" y="402" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1276" y="402" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1218" y="418" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1232" y="418" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1246" y="418" width="10" height="8" rx="1" fill="#55654C" stroke="none"/><rect x="1260" y="418" width="10" height="8" rx="1" fill="#55654C" stroke="none"/>
+    <rect x="1216" y="458" width="68" height="30" rx="15" fill="#F2F5FA"/>
+    <circle cx="1250" cy="473" r="6" fill="#002B54" stroke="none"/>
+    <rect x="1186" y="466" width="22" height="12" rx="5" fill="#F2F5FA" stroke-width="2.4"/>
+    <rect x="1292" y="466" width="22" height="12" rx="5" fill="#F2F5FA" stroke-width="2.4"/>
+    <g stroke-width="2.4"><rect x="1191" y="502" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1233" y="502" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1275" y="502" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1191" y="532" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1233" y="532" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1275" y="532" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1191" y="562" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1233" y="562" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1275" y="562" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1191" y="592" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1233" y="592" width="34" height="22" rx="8" fill="#F2F5FA"/><rect x="1275" y="592" width="34" height="22" rx="8" fill="#F2F5FA"/></g>
+  </g>
+  <g id="pSmart" opacity="0">
+    <rect x="1112" y="98" width="276" height="556" rx="42" fill="#FFFFFF"/>
+    <rect x="1128" y="146" width="244" height="460" rx="13" fill="url(#gScreen)" stroke="none"/>
+    <line x1="1222" y1="122" x2="1278" y2="122"/>
+    <circle cx="1302" cy="122" r="5" fill="#002B54" stroke="none"/>
+    <rect x="1388" y="232" width="7" height="58" rx="3" fill="#002B54" stroke="none"/>
+    <text x="1250" y="250" text-anchor="middle" font-family="Lato, sans-serif" font-weight="900" font-size="44" letter-spacing="3" fill="#FFFFFF" stroke="none">E-TEL</text>
+    <rect class="app" data-n="0" x="1152" y="292" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/><rect class="app" data-n="1" x="1204" y="292" width="40" height="40" rx="11" fill="#C9D6F2" fill-opacity=".9" stroke="none"/><rect class="app" data-n="2" x="1256" y="292" width="40" height="40" rx="11" fill="#8FA8E0" fill-opacity=".9" stroke="none"/><rect class="app" data-n="3" x="1308" y="292" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/><rect class="app" data-n="4" x="1152" y="348" width="40" height="40" rx="11" fill="#AFC2EC" fill-opacity=".9" stroke="none"/><rect class="app" data-n="5" x="1204" y="348" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/><rect class="app" data-n="6" x="1256" y="348" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/><rect class="app" data-n="7" x="1308" y="348" width="40" height="40" rx="11" fill="#C9D6F2" fill-opacity=".9" stroke="none"/><rect class="app" data-n="8" x="1152" y="404" width="40" height="40" rx="11" fill="#8FA8E0" fill-opacity=".9" stroke="none"/><rect class="app" data-n="9" x="1204" y="404" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/><rect class="app" data-n="10" x="1256" y="404" width="40" height="40" rx="11" fill="#AFC2EC" fill-opacity=".9" stroke="none"/><rect class="app" data-n="11" x="1308" y="404" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/><rect class="app" data-n="12" x="1152" y="460" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/><rect class="app" data-n="13" x="1204" y="460" width="40" height="40" rx="11" fill="#C9D6F2" fill-opacity=".9" stroke="none"/><rect class="app" data-n="14" x="1256" y="460" width="40" height="40" rx="11" fill="#8FA8E0" fill-opacity=".9" stroke="none"/><rect class="app" data-n="15" x="1308" y="460" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".28" stroke="none"/>
+    <rect x="1140" y="528" width="220" height="60" rx="18" fill="#FFFFFF" fill-opacity=".13" stroke="none"/>
+    <rect class="app" data-n="16" x="1152" y="538" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".9" stroke="none"/><rect class="app" data-n="17" x="1204" y="538" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".9" stroke="none"/><rect class="app" data-n="18" x="1256" y="538" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".9" stroke="none"/><rect class="app" data-n="19" x="1308" y="538" width="40" height="40" rx="11" fill="#FFFFFF" fill-opacity=".9" stroke="none"/>
+    <line x1="1212" y1="596" x2="1288" y2="596" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="5"/>
+  </g>
+</g>
+
+<g id="scene-solar">
+  <rect x="2240" y="470" width="640" height="250" fill="#FFFFFF"/>
+  <rect x="2230" y="458" width="660" height="14" rx="2" fill="#E6EBF3"/>
+  <rect x="2290" y="504" width="540" height="44" fill="#D6E1F0"/>
+  <line x1="2344" y1="506" x2="2344" y2="546" stroke-width="2.4"/><line x1="2398" y1="506" x2="2398" y2="546" stroke-width="2.4"/><line x1="2452" y1="506" x2="2452" y2="546" stroke-width="2.4"/><line x1="2506" y1="506" x2="2506" y2="546" stroke-width="2.4"/><line x1="2560" y1="506" x2="2560" y2="546" stroke-width="2.4"/><line x1="2614" y1="506" x2="2614" y2="546" stroke-width="2.4"/><line x1="2668" y1="506" x2="2668" y2="546" stroke-width="2.4"/><line x1="2722" y1="506" x2="2722" y2="546" stroke-width="2.4"/><line x1="2776" y1="506" x2="2776" y2="546" stroke-width="2.4"/>
+  <rect x="2290" y="588" width="140" height="132" fill="#E6EBF3"/>
+  <line x1="2292" y1="600" x2="2428" y2="600" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="612" x2="2428" y2="612" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="624" x2="2428" y2="624" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="636" x2="2428" y2="636" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="648" x2="2428" y2="648" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="660" x2="2428" y2="660" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="672" x2="2428" y2="672" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="684" x2="2428" y2="684" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="696" x2="2428" y2="696" stroke-width="2" stroke-opacity=".55"/><line x1="2292" y1="708" x2="2428" y2="708" stroke-width="2" stroke-opacity=".55"/>
+  <rect x="2462" y="618" width="58" height="102" fill="#E6EBF3"/>
+  <circle cx="2508" cy="672" r="3.5" fill="#002B54" stroke="none"/>
+  <rect x="2560" y="600" width="270" height="22" rx="3" fill="#FFFFFF"/>
+  <text x="2695" y="617" text-anchor="middle" font-family="Lato, sans-serif" font-weight="700" font-size="15" letter-spacing="2" fill="#002B54" stroke="none">COLD STORE</text>
+  <line x1="2262" y1="440" x2="2262" y2="458" stroke-width="3"/><line x1="2344" y1="414" x2="2344" y2="458" stroke-width="3"/><polygon points="2252,440 2336,440 2354,392 2270,392" fill="#3853A4"/><path d="M2261 416 H2345 M2280 440 L2298 392 M2308 440 L2326 392" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/><line x1="2366" y1="440" x2="2366" y2="458" stroke-width="3"/><line x1="2448" y1="414" x2="2448" y2="458" stroke-width="3"/><polygon points="2356,440 2440,440 2458,392 2374,392" fill="#3853A4"/><path d="M2365 416 H2449 M2384 440 L2402 392 M2412 440 L2430 392" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/><line x1="2470" y1="440" x2="2470" y2="458" stroke-width="3"/><line x1="2552" y1="414" x2="2552" y2="458" stroke-width="3"/><polygon points="2460,440 2544,440 2562,392 2478,392" fill="#3853A4"/><path d="M2469 416 H2553 M2488 440 L2506 392 M2516 440 L2534 392" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/><line x1="2574" y1="440" x2="2574" y2="458" stroke-width="3"/><line x1="2656" y1="414" x2="2656" y2="458" stroke-width="3"/><polygon points="2564,440 2648,440 2666,392 2582,392" fill="#3853A4"/><path d="M2573 416 H2657 M2592 440 L2610 392 M2620 440 L2638 392" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/><line x1="2678" y1="440" x2="2678" y2="458" stroke-width="3"/><line x1="2760" y1="414" x2="2760" y2="458" stroke-width="3"/><polygon points="2668,440 2752,440 2770,392 2686,392" fill="#3853A4"/><path d="M2677 416 H2761 M2696 440 L2714 392 M2724 440 L2742 392" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/><line x1="2782" y1="440" x2="2782" y2="458" stroke-width="3"/><line x1="2864" y1="414" x2="2864" y2="458" stroke-width="3"/><polygon points="2772,440 2856,440 2874,392 2790,392" fill="#3853A4"/><path d="M2781 416 H2865 M2800 440 L2818 392 M2828 440 L2846 392" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/>
+  <rect x="2890" y="556" width="46" height="84" rx="6" fill="#FFFFFF"/>
+  <rect x="2900" y="568" width="26" height="16" rx="2" fill="#3853A4" stroke="none"/>
+  <path d="M2900 600H2926M2900 610H2926M2900 620H2926" stroke-width="2.4"/>
+  <line x1="3010" y1="690" x2="3010" y2="720" stroke-width="3"/><line x1="3084" y1="660" x2="3084" y2="720" stroke-width="3"/><polygon points="3000,690 3076,690 3092,632 3016,632" fill="#3853A4"/><path d="M3008 661 H3084 M3025 690 L3041 632 M3050 690 L3066 632" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/><line x1="3106" y1="690" x2="3106" y2="720" stroke-width="3"/><line x1="3180" y1="660" x2="3180" y2="720" stroke-width="3"/><polygon points="3096,690 3172,690 3188,632 3112,632" fill="#3853A4"/><path d="M3104 661 H3180 M3121 690 L3137 632 M3146 690 L3162 632" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/><line x1="3202" y1="690" x2="3202" y2="720" stroke-width="3"/><line x1="3276" y1="660" x2="3276" y2="720" stroke-width="3"/><polygon points="3192,690 3268,690 3284,632 3208,632" fill="#3853A4"/><path d="M3200 661 H3276 M3217 690 L3233 632 M3242 690 L3258 632" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="2"/>
+</g>
+
+<g id="scene-network">
+  <line x1="3650" y1="122" x2="3650" y2="148" stroke-width="2.6"/><line x1="3690" y1="122" x2="3690" y2="148" stroke-width="2.6"/>
+  <path d="M3646 148H3700" stroke-width="2.6"/>
+  <rect x="3560" y="100" width="22" height="620" fill="url(#pHatch)"/>
+  <rect x="3978" y="100" width="22" height="620" fill="url(#pHatch)"/>
+  <rect x="3560" y="100" width="440" height="22" fill="url(#pHatch)"/>
+  <line x1="3582" y1="720" x2="3978" y2="720"/>
+  <rect x="3682" y="166" width="236" height="16" rx="4" fill="#002B54" stroke="none"/>
+  <rect x="3690" y="176" width="220" height="532" rx="6" fill="#1B2B44"/>
+  <line x1="3706" y1="186" x2="3706" y2="700" stroke="#3A4C6B" stroke-width="3"/>
+  <line x1="3894" y1="186" x2="3894" y2="700" stroke="#3A4C6B" stroke-width="3"/>
+  <rect x="3712" y="194" width="176" height="28" rx="2" fill="#2A3B57" stroke="none"/><rect x="3720" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3734" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3748" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3762" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3776" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3790" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3804" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3818" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3832" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3846" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3860" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3874" y="204" width="9" height="8" rx="1" fill="#CFD8E6" stroke="none"/><rect x="3712" y="228" width="176" height="28" rx="2" fill="#2A3B57" stroke="none"/><rect x="3720" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3730" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3740" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3750" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3760" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3770" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3780" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3790" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3800" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3810" y="240" width="7" height="7" rx="1" fill="#9FB0C8" stroke="none"/><rect x="3712" y="262" width="176" height="18" rx="2" fill="#22324C" stroke="none"/><path d="M3730 266 v10" stroke="#5B6D8A" stroke-width="3" fill="none"/><path d="M3760 266 v10" stroke="#5B6D8A" stroke-width="3" fill="none"/><path d="M3790 266 v10" stroke="#5B6D8A" stroke-width="3" fill="none"/><path d="M3820 266 v10" stroke="#5B6D8A" stroke-width="3" fill="none"/><path d="M3850 266 v10" stroke="#5B6D8A" stroke-width="3" fill="none"/><path d="M3880 266 v10" stroke="#5B6D8A" stroke-width="3" fill="none"/><rect x="3712" y="288" width="176" height="52" rx="3" fill="#E8EDF5" stroke="none"/><rect x="3712" y="288" width="8" height="52" fill="#3853A4" stroke="none"/><rect x="3728" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3743" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3758" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3773" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3788" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3803" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3818" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3833" y="297" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3712" y="348" width="176" height="52" rx="3" fill="#E8EDF5" stroke="none"/><rect x="3712" y="348" width="8" height="52" fill="#3853A4" stroke="none"/><rect x="3728" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3743" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3758" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3773" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3788" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3803" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3818" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3833" y="357" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3712" y="408" width="176" height="52" rx="3" fill="#E8EDF5" stroke="none"/><rect x="3712" y="408" width="8" height="52" fill="#3853A4" stroke="none"/><rect x="3728" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3743" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3758" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3773" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3788" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3803" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3818" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3833" y="417" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3712" y="468" width="176" height="52" rx="3" fill="#E8EDF5" stroke="none"/><rect x="3712" y="468" width="8" height="52" fill="#3853A4" stroke="none"/><rect x="3728" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3743" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3758" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3773" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3788" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3803" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3818" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3833" y="477" width="10" height="34" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3712" y="528" width="176" height="80" rx="3" fill="#E8EDF5" stroke="none"/><rect x="3726" y="538" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3766" y="538" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3806" y="538" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3846" y="538" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3726" y="560" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3766" y="560" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3806" y="560" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3846" y="560" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3726" y="582" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3766" y="582" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3806" y="582" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3846" y="582" width="34" height="16" rx="2" fill="#C9D3E2" stroke="none"/><rect x="3712" y="618" width="176" height="74" rx="3" fill="#2A3B57" stroke="none"/><rect x="3732" y="634" width="46" height="22" rx="2" fill="#3E7FC4" stroke="none"/><line x1="3800" y1="638" x2="3870" y2="638" stroke="#4D5F7D" stroke-width="3"/><line x1="3800" y1="650" x2="3870" y2="650" stroke="#4D5F7D" stroke-width="3"/><line x1="3800" y1="662" x2="3870" y2="662" stroke="#4D5F7D" stroke-width="3"/><line x1="3800" y1="674" x2="3870" y2="674" stroke="#4D5F7D" stroke-width="3"/>
+  <circle class="led" style="animation-delay:-0.73s" cx="3828" cy="243" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.15s" cx="3838" cy="243" r="3.2" fill="#F2B544" stroke="none"/><circle class="led" style="animation-delay:-0.16s" cx="3848" cy="243" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.32s" cx="3858" cy="243" r="3.2" fill="#F2B544" stroke="none"/><circle class="led" style="animation-delay:-1.92s" cx="3868" cy="243" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.53s" cx="3878" cy="243" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.66s" cx="3858" cy="302" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.98s" cx="3867" cy="302" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.51s" cx="3876" cy="302" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.99s" cx="3858" cy="324" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.92s" cx="3858" cy="362" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.40s" cx="3867" cy="362" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.50s" cx="3876" cy="362" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.21s" cx="3858" cy="384" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.61s" cx="3858" cy="422" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.43s" cx="3867" cy="422" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.67s" cx="3876" cy="422" r="3.2" fill="#F2B544" stroke="none"/><circle class="led" style="animation-delay:-0.02s" cx="3858" cy="444" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.37s" cx="3858" cy="482" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-2.04s" cx="3867" cy="482" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-0.99s" cx="3876" cy="482" r="3.2" fill="#5BD49A" stroke="none"/><circle class="led" style="animation-delay:-1.03s" cx="3858" cy="504" r="3.2" fill="#5BD49A" stroke="none"/>
+  <rect x="3698" y="706" width="22" height="14" rx="2" fill="#002B54" stroke="none"/>
+  <rect x="3880" y="706" width="22" height="14" rx="2" fill="#002B54" stroke="none"/>
+</g>
+
+<g id="scene-marine">
+  <rect x="4470" y="720" width="50" height="280" fill="url(#pHatch)"/>
+  <rect x="4460" y="712" width="72" height="14" rx="3" fill="#C9D2DD"/>
+  <rect x="4520" y="736" width="14" height="70" rx="3" fill="#002B54" stroke="none"/>
+  <rect x="4472" y="698" width="18" height="16" fill="#C9D2DD"/>
+  <ellipse cx="4481" cy="697" rx="15" ry="6" fill="#C9D2DD"/>
+  <g class="bob">
+    <path d="M4730 598 L4742 760 C4760 776 4800 786 4880 790 L5160 792 C5240 790 5290 776 5322 744 C5350 700 5376 630 5394 566 C5250 572 4960 588 4730 598 Z" fill="#FFFFFF" stroke="none"/>
+    <rect x="4700" y="742" width="720" height="60" fill="#2E4A8C" clip-path="url(#cHull)" stroke="none"/>
+    <path d="M4734 616 C4960 606 5250 590 5388 584" fill="none" stroke="#3853A4" stroke-width="14" clip-path="url(#cHull)"/>
+    <path d="M4738 642 C4960 632 5250 616 5374 610" fill="none" stroke="#3853A4" stroke-width="4" clip-path="url(#cHull)"/>
+    <text x="5250" y="664" text-anchor="middle" font-family="Lato, sans-serif" font-style="italic" font-weight="700" font-size="21" fill="#3853A4" stroke="none">NorthWest Marine</text>
+    <path d="M4730 598 L4742 760 C4760 776 4800 786 4880 790 L5160 792 C5240 790 5290 776 5322 744 C5350 700 5376 630 5394 566 C5250 572 4960 588 4730 598 Z" fill="none"/>
+    <path d="M4736 578 C4960 568 5250 552 5392 546" fill="none" stroke-width="3"/>
+    <line x1="4770" y1="576.3" x2="4770" y2="596.1" stroke-width="2.4"/><line x1="4820" y1="573.9" x2="4820" y2="593.7" stroke-width="2.4"/><line x1="4870" y1="571.5" x2="4870" y2="591.3" stroke-width="2.4"/><line x1="4920" y1="569.0" x2="4920" y2="588.8" stroke-width="2.4"/><line x1="4970" y1="566.6" x2="4970" y2="586.4" stroke-width="2.4"/><line x1="5020" y1="564.1" x2="5020" y2="584.0" stroke-width="2.4"/><line x1="5070" y1="561.7" x2="5070" y2="581.6" stroke-width="2.4"/><line x1="5120" y1="559.3" x2="5120" y2="579.2" stroke-width="2.4"/><line x1="5170" y1="556.8" x2="5170" y2="576.8" stroke-width="2.4"/><line x1="5220" y1="554.4" x2="5220" y2="574.4" stroke-width="2.4"/><line x1="5270" y1="552.0" x2="5270" y2="572.0" stroke-width="2.4"/><line x1="5320" y1="549.5" x2="5320" y2="569.6" stroke-width="2.4"/>
+    <path d="M4752 588 V520 H4802 V586" fill="none" stroke-width="3.5"/>
+    <path d="M4850 592 L4850 484 Q4850 470 4864 470 L5004 470 L5040 520 L5040 586" fill="#FFFFFF"/>
+    <rect x="4868" y="488" width="34" height="24" rx="3" fill="#CFDBEC" stroke-width="2.6"/>
+    <rect x="4910" y="488" width="34" height="24" rx="3" fill="#CFDBEC" stroke-width="2.6"/>
+    <rect x="4952" y="488" width="34" height="24" rx="3" fill="#CFDBEC" stroke-width="2.6"/>
+    <polygon points="4998,482 5014,482 5034,514 5002,514" fill="#CFDBEC" stroke-width="2.6"/>
+    <rect x="4840" y="460" width="178" height="12" rx="3" fill="#002B54" stroke="none"/>
+    <rect x="4888" y="446" width="46" height="8" rx="3" fill="#002B54" stroke="none"/>
+    <line x1="4911" y1="454" x2="4911" y2="460" stroke-width="3"/>
+    <line x1="4960" y1="460" x2="4960" y2="330"/>
+    <line x1="4932" y1="362" x2="4988" y2="362"/>
+    <circle cx="4960" cy="326" r="5" fill="#002B54" stroke="none"/>
+    <line x1="4996" y1="460" x2="5006" y2="386" stroke-width="2.4"/>
+    <circle cx="5330" cy="560" r="14" fill="#FFFFFF"/>
+    <line x1="5330" y1="574" x2="5330" y2="560"/>
+  </g>
+  <g class="bob2"><line x1="5580" y1="724" x2="5580" y2="688" stroke-width="2.4"/><path d="M5580 688 h18 v-10 h-18" fill="#002B54" stroke="none"/><circle cx="5580" cy="736" r="13" fill="#FFFFFF"/><line x1="5700" y1="724" x2="5700" y2="688" stroke-width="2.4"/><path d="M5700 688 h18 v-10 h-18" fill="#002B54" stroke="none"/><circle cx="5700" cy="736" r="13" fill="#FFFFFF"/><line x1="5820" y1="724" x2="5820" y2="688" stroke-width="2.4"/><path d="M5820 688 h18 v-10 h-18" fill="#002B54" stroke="none"/><circle cx="5820" cy="736" r="13" fill="#FFFFFF"/></g>
+  <path d="M5640 750 V840 c0 11 -13 11 -13 1" fill="none" stroke-width="2.4" stroke-opacity=".7"/><path d="M5760 750 V840 c0 11 -13 11 -13 1" fill="none" stroke-width="2.4" stroke-opacity=".7"/>
+</g>
+
+<g id="scene-minerals">
+  <g stroke-width="2.6">
+    <line x1="6304" y1="652" x2="6292" y2="548"/><line x1="6316" y1="652" x2="6308" y2="540"/><line x1="6328" y1="652" x2="6324" y2="552"/>
+    <line x1="6288" y1="560" x2="6334" y2="560"/>
+  </g>
+  <line x1="6384" y1="652" x2="6384" y2="206" stroke-width="4"/>
+  <line x1="6416" y1="652" x2="6416" y2="206" stroke-width="4"/>
+  <line x1="6384" y1="640" x2="6416" y2="600" stroke-width="2.6"/><line x1="6384" y1="640" x2="6416" y2="640" stroke-width="2"/><line x1="6416" y1="600" x2="6384" y2="560" stroke-width="2.6"/><line x1="6384" y1="600" x2="6416" y2="600" stroke-width="2"/><line x1="6384" y1="560" x2="6416" y2="520" stroke-width="2.6"/><line x1="6384" y1="560" x2="6416" y2="560" stroke-width="2"/><line x1="6416" y1="520" x2="6384" y2="480" stroke-width="2.6"/><line x1="6384" y1="520" x2="6416" y2="520" stroke-width="2"/><line x1="6384" y1="480" x2="6416" y2="440" stroke-width="2.6"/><line x1="6384" y1="480" x2="6416" y2="480" stroke-width="2"/><line x1="6416" y1="440" x2="6384" y2="400" stroke-width="2.6"/><line x1="6384" y1="440" x2="6416" y2="440" stroke-width="2"/><line x1="6384" y1="400" x2="6416" y2="360" stroke-width="2.6"/><line x1="6384" y1="400" x2="6416" y2="400" stroke-width="2"/><line x1="6416" y1="360" x2="6384" y2="320" stroke-width="2.6"/><line x1="6384" y1="360" x2="6416" y2="360" stroke-width="2"/><line x1="6384" y1="320" x2="6416" y2="280" stroke-width="2.6"/><line x1="6384" y1="320" x2="6416" y2="320" stroke-width="2"/><line x1="6416" y1="280" x2="6384" y2="240" stroke-width="2.6"/><line x1="6384" y1="280" x2="6416" y2="280" stroke-width="2"/><line x1="6384" y1="240" x2="6416" y2="200" stroke-width="2.6"/><line x1="6384" y1="240" x2="6416" y2="240" stroke-width="2"/>
+  <rect id="drive" x="6386" y="300" width="28" height="42" rx="3" fill="#002B54" stroke="none"/>
+  <rect x="6372" y="190" width="56" height="18" rx="3" fill="#002B54" stroke="none"/>
+  <circle cx="6400" cy="199" r="6" fill="#FFFFFF" stroke="none"/>
+  <line x1="6416" y1="430" x2="6470" y2="584"/>
+  <rect x="6296" y="652" width="218" height="38" rx="4" fill="#E8EDF5"/>
+  <rect x="6430" y="584" width="84" height="68" rx="4" fill="#FFFFFF"/>
+  <rect x="6444" y="596" width="30" height="22" rx="2" fill="#CFDBEC" stroke-width="2.4"/>
+  <path d="M6486 600H6504M6486 610H6504M6486 620H6504" stroke-width="2.4"/>
+  <rect x="6290" y="690" width="230" height="30" rx="15" fill="#2B3A55"/>
+  <circle cx="6312" cy="705" r="8" fill="#8C9AB0" stroke="none"/><circle cx="6352" cy="705" r="8" fill="#8C9AB0" stroke="none"/><circle cx="6392" cy="705" r="8" fill="#8C9AB0" stroke="none"/><circle cx="6432" cy="705" r="8" fill="#8C9AB0" stroke="none"/><circle cx="6472" cy="705" r="8" fill="#8C9AB0" stroke="none"/><circle cx="6500" cy="705" r="8" fill="#8C9AB0" stroke="none"/>
+  <g id="core" opacity="0">
+    <rect x="6540" y="668" width="220" height="52" rx="4" fill="#E7DCC8"/>
+    <rect x="6550" y="676" width="60" height="10" rx="2" fill="#EADFC8" stroke="none"/><rect x="6610" y="676" width="70" height="10" rx="2" fill="#2F3543" stroke="none"/><rect x="6680" y="676" width="70" height="10" rx="2" fill="#CDB89D" stroke="none"/><rect x="6550" y="690" width="46" height="10" rx="2" fill="#EADFC8" stroke="none"/><rect x="6596" y="690" width="92" height="10" rx="2" fill="#2F3543" stroke="none"/><rect x="6688" y="690" width="62" height="10" rx="2" fill="#CDB89D" stroke="none"/><rect x="6550" y="704" width="70" height="10" rx="2" fill="#EADFC8" stroke="none"/><rect x="6620" y="704" width="64" height="10" rx="2" fill="#2F3543" stroke="none"/><rect x="6684" y="704" width="66" height="10" rx="2" fill="#CDB89D" stroke="none"/>
+  </g>
+</g>
+<g id="strataLabels" opacity="0" font-family="Lato, sans-serif" font-weight="700" font-size="22" stroke="none">
+  <text x="6560" y="796" fill="#7A6A52">Sand</text>
+  <text x="6560" y="864" fill="#FFFFFF">Heavy mineral sands</text>
+  <text x="6560" y="918" fill="#6E5B44">Clay</text>
+</g>
+</g>
+
+<g id="head" transform="translate(1306 698)">
+  <circle class="halo" r="20" fill="#E9262F" opacity=".35"/>
+  <g class="dot"><circle r="10" fill="#E9262F"/><circle r="4" fill="#FFFFFF"/></g>
+  <g class="bit"><path d="M-15 -6 H15 L11 8 L0 22 L-11 8 Z" fill="#002B54"/><path class="teeth" d="M-9 6 L-4 16 M0 8 V20 M9 6 L4 16" stroke="#C9D3E0" stroke-width="2.4" fill="none"/></g>
+</g>
+</svg>
+      </div></div>
+      <nav class="rail" aria-label="Story chapters"><ol><li><button type="button">Phones<span class="track"><i></i></span></button></li><li><button type="button">Solar<span class="track"><i></i></span></button></li><li><button type="button">Networks<span class="track"><i></i></span></button></li><li><button type="button">Vessels<span class="track"><i></i></span></button></li><li><button type="button">Minerals<span class="track"><i></i></span></button></li></ol><a class="skip" href="#companies">Skip the story</a></nav>
+      <div class="cards">
+      <article class="card on">
+        <p class="who">Brantel Connect</p>
+        <h3>It starts with a phone.</h3>
+        <p>In 2004 Brantel became Lenovo's agent for Sri Lanka. In 2008 it launched its own brand, E-TEL, which grew into the country's second best selling smartphone. Today Brantel Connect sells phones and tablets through dealers and service centres across the island.</p>
+        <p class="detail">Brands include E-TEL, Blackview and Oukitel</p>
       </article>
-      <article class="boat rise">
-        <img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/49.jpg" alt="Eighteen metre longline fishing vessel">
-        <div class="c"><span class="len">18.0 m</span><p class="nm">Longline fishing vessel</p><p class="u">Offshore longline</p></div>
+      <article class="card">
+        <p class="who">Brantel Energy</p>
+        <h3>It runs up to the roof.</h3>
+        <p>Brantel Energy supplies and installs solar for factories, warehouses and homes, from rooftop systems to ground mounted arrays of 500 kW. It holds national distribution for GoodWe, SMA, Deye, SolarEdge and JA Solar, and trains installers on roadshows around the island.</p>
+        <p class="detail">Recent sites: Winsland Reality 500 kW, Coldcargo 250 kW, Friend Polypack 200 kW</p>
       </article>
-      <article class="boat rise">
-        <img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/passenger-boat.jpg" alt="Fifty foot passenger boat">
-        <div class="c"><span class="len">15.2 m</span><p class="nm">Passenger boat</p><p class="u">Transfer and tourism</p></div>
+      <article class="card">
+        <p class="who">Networks and IT</p>
+        <h3>It runs through the building.</h3>
+        <p>Since 2014 Brantel has supplied servers, mini PCs and thin clients to companies, and Corning optical cabling and Cisco networks to buildings across Sri Lanka, among them Lotus Tower, Havelock City and Mattala airport.</p>
+        <p class="detail">Also hospitals, universities, resorts and government offices</p>
       </article>
-      <article class="boat rise">
-        <img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/10m-boat-1.jpg" alt="Fourteen and a half metre multi day fishing vessel">
-        <div class="c"><span class="len">14.5 m</span><p class="nm">Multi day fishing vessel</p><p class="u">Coastal, multi day</p></div>
+      <article class="card">
+        <p class="who">NorthWest Marine Lanka</p>
+        <h3>It runs out to sea.</h3>
+        <p>NorthWest Marine has built fibreglass boats since 2006, first at Dankotuwa and since 2023 at its own yard beside Dikkowita fishery harbour. Hulls run from 6 metre day boats to 20 metre multi day longliners, for Sri Lankan owners and for export.</p>
+        <p class="detail">Also ice plants, fish processing plants and vessel maintenance</p>
       </article>
-      <article class="boat rise">
-        <img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/9meter_boat.jpg" alt="Ten and a half metre fishing vessel with forward cabin">
-        <div class="c"><span class="len">10.5 m</span><p class="nm">Fishing vessel, forward cabin</p><p class="u">Coastal</p></div>
+      <article class="card">
+        <p class="who">Brantel Mineral Exploration and Mining Services</p>
+        <h3>It runs down into the ground.</h3>
+        <p>The mining company maps, surveys, drills and assays ground for heavy mineral sands, chromite, manganese, copper and iron ore. It works on the group's own projects and for other licence holders, from offices in Sri Lanka and Oman.</p>
+        <p class="detail">Own drill rigs, XRF and AAS assay, feasibility studies and EIAs</p>
       </article>
-      <article class="boat rise">
-        <img loading="lazy" decoding="async" src="https://northwestmarineboat.com/wp-content/uploads/2024/01/6meter-boat1.jpg" alt="Six metre day fishing vessel">
-        <div class="c"><span class="len">6.0 m</span><p class="nm">Day fishing vessel</p><p class="u">Inshore</p></div>
+      <article class="card final">
+        <p class="who">Brantel Group</p>
+        <h3>Five businesses, one group.</h3>
+        <p>Each company holds its own licences, staff and customers. What they share is a habit of supplying the equipment, installing it and looking after it afterwards.</p>
+        <a class="btn dark" href="#companies" tabindex="-1">Meet the companies</a>
       </article>
-    </div>
-  </div>
-</section>
-
-<section id="resources">
-  <div class="wrap">
-    <p class="eyebrow label rise">Mineral resources</p>
-    <h2 class="rise">Exploration and mining</h2>
-  </div>
-  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
-    <div class="feat rise">
-      <div class="fimg"><img loading="lazy" decoding="async" src="https://live.staticflickr.com/2104/2405635877_5682c63e55_b.jpg" alt="Exploration drilling rig mast"></div>
-      <div class="ftext">
-        <h3>Sri Lanka and Oman, working three regions</h3>
-        <p>Brantel Mineral Exploration and Mining Services runs exploration programmes on the
-          group's own projects and under contract to other licence holders, targeting heavy
-          mineral sands, chromite, manganese, copper and iron ore.</p>
-        <p>Geological, engineering and metallurgical staff have come from working mines around
-          the world. Projects are mostly open pit heavy mineral sand and industrial mineral
-          deposits, with project work reaching across Africa, Australasia and the Middle East.</p>
-        <ul class="ticks">
-          <li>Company owned drill rigs, logged and sampled in house</li>
-          <li>Full geophysical suite from electrical to gravity</li>
-          <li>XRF and AAS analysis, field and laboratory</li>
-          <li>Technical reporting and environmental assessment</li>
-        </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="cool" style="padding-top:0">
-  <div class="wrap" style="padding-left:0;padding-right:0;max-width:var(--max)">
-    <div class="feat flip rise">
-      <div class="fimg"><img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Chromite_%26_serpentine_%28Neoarchean%3B_Red_Lodge_Chromite_District%2C_Beartooth_Mountains%2C_Montana%2C_USA%29_1.jpg/1920px-Chromite_%26_serpentine_%28Neoarchean%3B_Red_Lodge_Chromite_District%2C_Beartooth_Mountains%2C_Montana%2C_USA%29_1.jpg" alt="Chromite banding in serpentinite"></div>
-      <div class="ftext">
-        <h3>What the group looks for</h3>
-        <p>Heavy mineral sands, chromite, manganese, copper and iron ore. Targets are assessed
-          on grade, tonnage and the cost of moving the product to a port, rather than on
-          headline resource figures alone.</p>
-        <p>Every programme runs to the same sequence: map the ground, survey it, drill it,
-          assay the samples, then decide whether the deposit carries a mine.</p>
+  <section id="companies" class="companies" aria-labelledby="companies-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="companies-title">The companies</h2>
+        <p>Three registered companies carry the five businesses in the story.</p>
+      </header>
+
+      <article class="company">
+        <figure class="media"><img src="assets/solar-rooftop.jpg" alt="A large commercial roof covered in solar panels, seen from above" width="1280" height="853" loading="lazy"></figure>
+        <div class="body">
+          <h3>Brantel Lanka (Pvt) Ltd</h3>
+          <p class="meta">Founded 2004, Colombo 03</p>
+          <p>The original company. It trades through three branches.</p>
+          <dl class="branches">
+            <div><dt>Brantel Connect</dt><dd>Phones, tablets and accessories, including Brantel's own E-TEL brand.</dd></div>
+            <div><dt>Brantel Energy</dt><dd>Solar panels, inverters and batteries from GoodWe, SMA, Deye, SolarEdge and JA Solar, supplied and installed.</dd></div>
+            <div><dt>Networks and IT</dt><dd>Corning optical and copper cabling, Cisco networks, servers, mini PCs and smartboards.</dd></div>
+          </dl>
+          <a class="textlink" href="https://brantel.lk">Visit brantel.lk</a>
+        </div>
+      </article>
+
+      <article class="company flip">
+        <div class="media hulls">
+          <img id="hullImg" src="assets/hull-20m.jpg" alt="A 20 metre multi day fishing vessel built by NorthWest Marine" width="573" height="267" loading="lazy">
+          <div class="seg" role="group" aria-label="Hull length"><button type="button" aria-pressed="true" data-src="assets/hull-20m.jpg" data-cap="20 m multi day fishing vessel, for offshore longlining" data-alt="A 20 metre multi day fishing vessel built by NorthWest Marine">20 m</button><button type="button" aria-pressed="false" data-src="assets/hull-18m.jpg" data-cap="18 m longline fishing vessel" data-alt="An 18 metre longline fishing vessel built by NorthWest Marine">18 m</button><button type="button" aria-pressed="false" data-src="assets/hull-15m.jpg" data-cap="15 m (50 ft) passenger boat, for transfers and tourism" data-alt="A 15 metre passenger boat built by NorthWest Marine">15 m</button><button type="button" aria-pressed="false" data-src="assets/hull-14m.jpg" data-cap="14.5 m multi day fishing vessel, for coastal trips" data-alt="A 14.5 metre multi day fishing vessel built by NorthWest Marine">14.5 m</button><button type="button" aria-pressed="false" data-src="assets/hull-10m.jpg" data-cap="10.5 m fishing vessel with a forward cabin" data-alt="A 10.5 metre fishing vessel with a forward cabin built by NorthWest Marine">10.5 m</button><button type="button" aria-pressed="false" data-src="assets/hull-6m.jpg" data-cap="6 m day fishing boat, for inshore work" data-alt="A 6 metre day fishing boat built by NorthWest Marine">6 m</button></div>
+          <p id="hullCap" class="cap" aria-live="polite">20 m multi day fishing vessel, for offshore longlining</p>
+        </div>
+        <div class="body">
+          <h3>NorthWest Marine Lanka (Pvt) Ltd</h3>
+          <p class="meta">Founded 2006, yard beside Dikkowita fishery harbour</p>
+          <p>Fibreglass fishing, passenger and work boats, built for Sri Lankan owners and for export. Alongside the boats the company installs ice plants and fish processing plants, and runs maintenance and vessel operation contracts.</p>
+          <a class="textlink" href="https://northwestmarineboat.com">Visit northwestmarineboat.com</a>
+        </div>
+      </article>
+
+      <article class="company portrait">
+        <figure class="media"><img src="assets/drill-rig.jpg" alt="The mast of an exploration drill rig against a blue sky" width="576" height="1024" loading="lazy"></figure>
+        <div class="body">
+          <h3>Brantel Mineral Exploration and Mining Services</h3>
+          <p class="meta">Offices in Sri Lanka and Oman</p>
+          <p>Exploration and open pit mining for heavy mineral sands, chromite, manganese, copper and iron ore, on the group's own projects and under contract to other licence holders.</p>
+          <ul class="caps">
+            <li>Geological and structural mapping</li>
+            <li>Electrical, electromagnetic, magnetic, radar and gravity surveys</li>
+            <li>Drilling on company owned rigs</li>
+            <li>XRF and AAS assay, in the field and the laboratory</li>
+            <li>Feasibility studies, reserve estimates and EIAs</li>
+            <li>Mine planning, active mining and audit</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="work" class="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2 id="work-title">Selected work</h2>
+        <p>Solar systems installed by Brantel Energy, and buildings where Brantel supplied Corning optical and copper cabling.</p>
+      </header>
+      <div class="sectors">
+        <div class="sector"><h3>Solar</h3><ul><li><b>Winsland Reality</b><span>500 kW, ground mounted</span></li><li><b>Coldcargo</b><span>Seeduwa, 250 kW</span></li><li><b>Friend Polypack</b><span>Weliweriya, 200 kW</span></li></ul></div>
+        <div class="sector"><h3>Government and public</h3><ul><li><b>Lotus Tower</b><span>Colombo</span></li><li><b>Mattala Rajapaksa International Airport</b><span>Immigration and emigration network</span></li><li><b>Department of Immigration and Emigration</b><span>Suhurupaya, Battaramulla</span></li><li><b>Department of Census and Statistics</b><span>Battaramulla</span></li><li><b>National Hospital, Epilepsy Unit</b><span>Colombo</span></li><li><b>Warakapola Hospital</b><span>Warakapola</span></li></ul></div>
+        <div class="sector"><h3>Education and research</h3><ul><li><b>SLIIT</b><span>Malabe</span></li><li><b>Sri Lanka Institute of Nanotechnology</b><span>Homagama</span></li><li><b>Institute of Bankers of Sri Lanka</b><span>Colombo</span></li></ul></div>
+        <div class="sector"><h3>Hospitality</h3><ul><li><b>Anantara Peace Haven</b><span>Tangalle</span></li><li><b>Sheraton Turtle Beach Resort</b><span>Kosgoda</span></li><li><b>The Calm Resort and Spa</b><span>Pasikuda</span></li><li><b>Temple Tree Resort and Spa</b><span>Bentota</span></li><li><b>Nilaveli Beach Hotel</b><span>Trincomalee</span></li><li><b>Sigiriya Jungles</b><span>Sigiriya</span></li></ul></div>
+        <div class="sector"><h3>Commercial and residential</h3><ul><li><b>Havelock City, Phases 3 and 4</b><span>Colombo</span></li><li><b>Sierra Tower</b><span>Colombo</span></li><li><b>Browns Capital Building</b><span>Boralla</span></li><li><b>Prime Splendour Apartments</b><span>Rajagiriya</span></li><li><b>Prime Aqua Apartments</b><span>Nawala</span></li><li><b>Orchid Apartments</b><span>Malabe</span></li><li><b>Global Rubber Industries</b><span>Industrial</span></li><li><b>NOLIMIT</b><span>Retail</span></li></ul></div>
+      </div>
+      <div class="principals">
+        <div>
+          <h3>National distribution</h3>
+          <p>Brantel holds Sri Lankan distribution for these manufacturers, and owns the E-TEL brand.</p>
+        </div>
+        <ul class="brands"><li>E-TEL<small>own brand</small></li><li>Corning</li><li>Cisco</li><li>GoodWe</li><li>SMA</li><li>Deye</li><li>SolarEdge</li><li>JA Solar</li><li>KBE Solar Cables</li><li>Netgear</li><li>Inspur</li><li>Eiboard</li><li>Blackview</li><li>Oukitel</li></ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="navy photoband">
-  <div class="bg"><img loading="lazy" decoding="async" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg/1920px-Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg" alt="Mining excavator loading a haul truck"></div>
-  <div class="wrap">
-    <p class="eyebrow label rise">Capability</p>
-    <h2 class="rise">Ground to feasibility, <span class="serif">in house</span>.</h2>
-    <p class="intro rise" style="color:#B9C8D9">A target can be mapped, drilled, assayed and
-      modelled without handing the programme to anyone else.</p>
-    <div class="caps">
-      <article class="cap rise"><h4>Field mapping</h4><p>Geological and structural mapping to identify new deposits and set drill targets.</p></article>
-      <article class="cap rise"><h4>Geophysical investigation</h4><p>Electrical, electromagnetic, magnetic, ground penetrating radar and gravity surveys across prospective zones.</p></article>
-      <article class="cap rise"><h4>Drilling</h4><p>Programmes run on owned or contracted rigs, with core and chips logged, sampled and modelled through to a block model.</p></article>
-      <article class="cap rise"><h4>Sample analysis</h4><p>XRF for oxides in field and laboratory, AAS for elements, grain counting for heavy mineral sand assemblages.</p></article>
-      <article class="cap rise"><h4>Studies and permitting</h4><p>Economic assessment, pre feasibility and feasibility studies, reserve estimation and environmental impact assessment.</p></article>
-      <article class="cap rise"><h4>Mine planning</h4><p>Strategic mine planning and engineering for open pit deposits, active mining and operational audit.</p></article>
-    </div>
-  </div>
-</section>
-
-<section id="projects" class="warm">
-  <div class="wrap">
-    <p class="eyebrow label rise">Selected work</p>
-    <h2 class="rise">Standing on the island.</h2>
-    <p class="intro rise">Government, hospitality, healthcare, education, industrial and
-      residential clients across Sri Lanka.</p>
-
-    <div class="projs">
-      <div class="pj rise"><p class="nm">Lotus Tower</p><span class="m">Colombo, optical infrastructure</span></div>
-      <div class="pj rise"><p class="nm">Mattala Rajapaksa International Airport</p><span class="m">Hambantota, immigration network</span></div>
-      <div class="pj rise"><p class="nm">Havelock City, Phases 3 and 4</p><span class="m">Colombo, structured cabling</span></div>
-      <div class="pj rise"><p class="nm">Department of Immigration and Emigration</p><span class="m">Suhurupaya, Battaramulla</span></div>
-      <div class="pj rise"><p class="nm">Department of Census and Statistics</p><span class="m">Battaramulla, network</span></div>
-      <div class="pj rise"><p class="nm">Sierra Tower</p><span class="m">Colombo, structured cabling</span></div>
-      <div class="pj rise"><p class="nm">Winsland Reality</p><span class="m">500 kW ground mount solar</span></div>
-      <div class="pj rise"><p class="nm">Coldcargo</p><span class="m">Seeduwa, 250 kW solar</span></div>
-      <div class="pj rise"><p class="nm">Friend Polypack</p><span class="m">Weliweriya, 200 kW solar</span></div>
-      <div class="pj rise"><p class="nm">Anantara Peace Haven</p><span class="m">Tangalle, optical infrastructure</span></div>
-      <div class="pj rise"><p class="nm">Sheraton Turtle Beach Resort</p><span class="m">Kosgoda, optical infrastructure</span></div>
-      <div class="pj rise"><p class="nm">The Calm Resort and Spa</p><span class="m">Pasikuda, optical infrastructure</span></div>
-      <div class="pj rise"><p class="nm">National Hospital, Epilepsy Unit</p><span class="m">Colombo, network</span></div>
-      <div class="pj rise"><p class="nm">Sri Lanka Institute of Nanotechnology</p><span class="m">Network infrastructure</span></div>
-      <div class="pj rise"><p class="nm">SLIIT</p><span class="m">Malabe, network infrastructure</span></div>
-      <div class="pj rise"><p class="nm">Institute of Bankers Sri Lanka</p><span class="m">Colombo, network</span></div>
-      <div class="pj rise"><p class="nm">Global Rubber Industries</p><span class="m">Industrial, network</span></div>
-      <div class="pj rise"><p class="nm">NOLIMIT</p><span class="m">Retail, optical infrastructure</span></div>
-    </div>
-
-    <p class="eyebrow label rise" style="margin-top:clamp(56px,8vh,90px)">Principals</p>
-    <h2 class="rise" style="font-size:clamp(1.6rem,3.4vw,2.4rem)">National distribution agreements.</h2>
-    <ul class="brands rise">
-      <li class="own">E-TEL, own brand</li>
-      <li>Corning</li><li>Cisco</li><li>SMA</li><li>GoodWe</li><li>Deye</li>
-      <li>SolarEdge</li><li>JA Solar</li><li>KBE Solar Cables</li><li>Netgear</li>
-      <li>Inspur</li><li>Eiboard</li><li>Blackview</li><li>Oukitel</li>
-    </ul>
-  </div>
-</section>
-
-<section id="history" class="navy">
-  <div class="wrap">
-    <p class="eyebrow label rise">Corporate history</p>
-    <h2 class="rise">Built one agreement <span class="serif">at a time</span>.</h2>
-    <div class="tl">
-      <div class="tlrow rise"><span class="yr">2004</span><span class="ev"><b>Lenovo agency, Sri Lanka</b>The company enters the mobile market as the appointed agent for Lenovo.</span></div>
-      <div class="tlrow rise"><span class="yr">2006</span><span class="ev"><b>NorthWest Marine begins</b>A small team of craftsmen starts building longline fibreglass hulls for export at the Industrial Development Board estate in Dankotuwa.</span></div>
-      <div class="tlrow rise"><span class="yr">2008</span><span class="ev"><b>E-TEL launched</b>An own brand handset line built for the mass market. E-TEL becomes Sri Lanka's second highest selling smartphone brand.</span></div>
-      <div class="tlrow rise"><span class="yr">2014</span><span class="ev"><b>Enterprise division opens</b>Servers, thin clients, mini PCs and custom software for corporate front and back office.</span></div>
-      <div class="tlrow rise"><span class="yr">2023</span><span class="ev"><b>Dikkowita yard opens</b>NorthWest Marine moves into a purpose built manufacturing facility opposite Dikkowita International Fisheries Harbour.</span></div>
-      <div class="tlrow rise"><span class="yr">Today</span><span class="ev"><b>Three divisions</b>Energy and technology across the island, marine manufacturing at Dikkowita, and mineral exploration and mining from offices in Sri Lanka and Oman.</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <p class="eyebrow label rise">Contact</p>
-    <h2 class="rise">Talk to the group office.</h2>
-    <div class="contact">
-      <div class="rise">
-        <p class="intro" style="margin-top:0">For supply, partnership and project enquiries,
-          write to the group office in Colombo. For products and installations in energy and
-          technology, or for a vessel enquiry, go straight to the division.</p>
-        <a class="btn" href="mailto:info@brantel.lk">Email the group office</a>
-      </div>
-      <div class="rise">
-        <div class="cb"><span class="k">Group office</span><span class="v">No. 285, R. A. De Mel Mawatha<br>Colombo 03, Sri Lanka</span></div>
-        <div class="cb"><span class="k">Telephone</span><span class="v"><a href="tel:+94112515600">+94 11 251 5600</a></span></div>
-        <div class="cb"><span class="k">Email</span><span class="v"><a href="mailto:info@brantel.lk">info@brantel.lk</a></span></div>
-        <div class="cb"><span class="k">Energy and technology</span><span class="v"><a href="https://brantel.lk">brantel.lk</a></span></div>
-        <div class="cb"><span class="k">Marine</span><span class="v"><a href="https://northwestmarineboat.com">northwestmarineboat.com</a></span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="top">
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap grid">
       <div>
-        <img class="fl" src="data:image/png;base64,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" alt="Brantel">
-        <p>Brantel Group operates across energy and technology, marine manufacturing, and
-          mineral exploration and mining, from Colombo, Dankotuwa, Dikkowita and Oman.</p>
+        <h2 id="contact-title">Contact the group office</h2>
+        <p>For supply, partnership and project enquiries, write to the group office in Colombo. For a product, an installation or a vessel, the companies' own websites are the fastest route.</p>
+        <a class="btn dark" href="mailto:info@brantel.lk">Email info@brantel.lk</a>
       </div>
-      <div>
-        <h5>Divisions</h5>
-        <ul>
-          <li><a href="#technology">Energy and technology</a></li>
-          <li><a href="#marine">Marine manufacturing</a></li>
-          <li><a href="#resources">Mineral resources</a></li>
-          <li><a href="#projects">Selected work</a></li>
-        </ul>
-      </div>
-      <div>
-        <h5>How the group operates</h5>
-        <ul>
-          <li><a href="#group">About</a></li>
-          <li><a href="#history">Corporate history</a></li>
-          <li><a href="#news">Media</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <dl class="clist">
+        <div><dt>Group office</dt><dd>No. 285, R. A. De Mel Mawatha<br>Colombo 03, Sri Lanka</dd></div>
+        <div><dt>Telephone</dt><dd><a href="tel:+94112515600">+94 11 251 5600</a></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:info@brantel.lk">info@brantel.lk</a></dd></div>
+        <div><dt>Websites</dt><dd><a href="https://brantel.lk">brantel.lk</a><br><a href="https://northwestmarineboat.com">northwestmarineboat.com</a></dd></div>
+      </dl>
     </div>
-    <div class="legal">
-      <span>Copyright 2026 Brantel Group</span>
-      <span>Colombo &middot; Dankotuwa &middot; Dikkowita &middot; Oman</span>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <img class="flogo" src="data:image/png;base64,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" alt="Brantel" width="208" height="21">
+      <nav aria-label="Footer">
+        <a href="#story">The story</a><a href="#companies">Companies</a><a href="#work">Work</a><a href="#contact">Contact</a>
+      </nav>
     </div>
-    <p class="note">Vessel photography courtesy of NorthWest Marine Lanka. Solar and mining
-      photographs are illustrative, sourced from Wikimedia Commons under Creative Commons
-      licences, and should be replaced with site photography before publication.</p>
+    <p class="credits">Vessel photographs by NorthWest Marine Lanka. Rooftop solar photograph by <a href="https://commons.wikimedia.org/wiki/File:2015-_Trademart_Brussels,_Bruxelles,_Belgium_(_Ank_Kumar_)_01.jpg">Ank Kumar</a>, CC BY-SA 4.0, via Wikimedia Commons. Drill rig photograph by <a href="https://www.flickr.com/photos/59773274@N00/2405635877">robstephaustralia</a>, CC BY 2.0, via Flickr. Story illustrations drawn for Brantel Group.</p>
+    <p class="copy">&copy; 2026 Brantel Group, Colombo, Sri Lanka</p>
   </div>
 </footer>
-
 <script>
-/* open at the top every time: disable scroll restoration and pin to 0 */
-if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-const toTop = () => window.scrollTo(0, 0);
-toTop();
-addEventListener('DOMContentLoaded', toTop);
-addEventListener('load', () => { toTop(); setTimeout(toTop, 60); });
+(function(){
+  'use strict';
+  if('scrollRestoration' in history) history.scrollRestoration='manual';
+  if(!location.hash){
+    window.scrollTo(0,0);
+    window.addEventListener('load',function(){ if(!location.hash) window.scrollTo(0,0); });
+  }
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const slides = [...document.querySelectorAll('.slide')];
-const dots = [...document.querySelectorAll('.dot')];
-let cur = 0, timer;
-const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var journey=document.getElementById('story');
+  var svg=document.getElementById('worldSvg');
+  if(!journey||!svg) return;
 
-function show(i){
-  cur = i;
-  slides.forEach((s,n) => s.classList.toggle('on', n === i));
-  dots.forEach((d,n) => d.classList.toggle('on', n === i));
-}
-function start(){ if(!reduce) timer = setInterval(() => show((cur+1) % slides.length), 6500); }
-dots.forEach(d => d.addEventListener('click', () => {
-  clearInterval(timer); show(+d.dataset.g); start();
-}));
-start();
+  var VBW=7200, VBH=1000;
+  var F=[1250,2560,3800,4980,6400];
+  var LEAD=.02, D=.135, T=.06, END=.065;
 
-const io = new IntersectionObserver((es) => {
-  es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-}, {threshold:0.1, rootMargin:'0px 0px -6% 0px'});
-document.querySelectorAll('.rise').forEach((el,i) => {
-  el.style.transitionDelay = (Math.min(i % 5, 4) * 65) + 'ms';
-  io.observe(el);
-});
+  var stage=journey.querySelector('.stage'), pane=journey.querySelector('.pane'), world=journey.querySelector('.world');
+  var thread=document.getElementById('thread'), head=document.getElementById('head'), far=document.getElementById('far'), sun=document.getElementById('sun');
+  var pKey=document.getElementById('pKey'), pSmart=document.getElementById('pSmart'), pTab=document.getElementById('pTab');
+  var apps=[].slice.call(svg.querySelectorAll('.app'));
+  var pulseA=document.getElementById('pulseA'), pulseB=document.getElementById('pulseB');
+  var drive=document.getElementById('drive'), core=document.getElementById('core'), labels=document.getElementById('strataLabels');
+  var cards=[].slice.call(journey.querySelectorAll('.card'));
+  var finalLink=journey.querySelector('.card.final a');
+  var railBtns=[].slice.call(journey.querySelectorAll('.rail button'));
+  var tracks=railBtns.map(function(b){ return b.querySelector('i'); });
+
+  var total=thread.getTotalLength();
+  thread.style.strokeDasharray=total+' '+total;
+  thread.style.strokeDashoffset=total;
+
+  var samples=[], N=1800;
+  for(var k=0;k<=N;k++){ var l=total*k/N, pt=thread.getPointAtLength(l); samples.push([l,pt.x,pt.y]); }
+  function lenAt(x,y,from){
+    var best=Infinity, bl=from||0;
+    for(var k=0;k<samples.length;k++){
+      var s=samples[k]; if(s[0]<(from||0)) continue;
+      var dx=s[1]-x, dy=s[2]-y, d=dx*dx+dy*dy;
+      if(d<best){ best=d; bl=s[0]; }
+    }
+    return bl;
+  }
+  var AP=[[[1306,698],[1600,860]],[[2216,760],[2913,706]],[[3612,560],[3800,760]],[[4440,760],[5530,744]],[[6200,714],[6400,872]]];
+  var A=[], cur=0;
+  AP.forEach(function(pr){ var a=lenAt(pr[0][0],pr[0][1],cur), b=lenAt(pr[1][0],pr[1][1],a); A.push([a,b]); cur=b; });
+  A[0][0]=0; A[4][1]=total;
+  var Lground=lenAt(6400,722,A[4][0]);
+  var LflowA=lenAt(2913,640,A[1][0]), LflowB=lenAt(3730,196,A[2][0]);
+
+  function clamp(v,a,b){ return v<a?a:(v>b?b:v); }
+  function ease(t){ return t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2; }
+  function smooth(a,b,v){ var t=clamp((v-a)/(b-a),0,1); return t*t*(3-2*t); }
+  function lerp(a,b,t){ return a+(b-a)*t; }
+  function dwellStart(i){ return LEAD+i*(D+T); }
+  function phase(p){
+    if(p<LEAD) return {k:'lead',i:0,t:p/LEAD};
+    var x=p-LEAD;
+    for(var i=0;i<5;i++){
+      if(x<D) return {k:'dwell',i:i,t:x/D};
+      x-=D;
+      if(i<4){ if(x<T) return {k:'travel',i:i,t:x/T}; x-=T; }
+    }
+    return {k:'end',i:4,t:clamp(x/END,0,1)};
+  }
+
+  var pw=0, ph=0, sc=1, focal=.64, endY=.4, topOff=64;
+  function measure(){
+    pw=pane.clientWidth; ph=pane.clientHeight; sc=ph/VBH;
+    var cs=getComputedStyle(pane);
+    focal=parseFloat(cs.getPropertyValue('--focal'))||.64;
+    endY=parseFloat(cs.getPropertyValue('--endy'))||.4;
+    topOff=parseFloat(getComputedStyle(stage).top)||0;
+    var w=Math.round(VBW*sc);
+    world.style.width=w+'px'; world.style.height=Math.round(ph)+'px';
+  }
+  function progress(){
+    var r=journey.getBoundingClientRect();
+    var span=journey.offsetHeight-stage.offsetHeight;
+    return span>0?clamp((topOff-r.top)/span,0,1):0;
+  }
+
+  var lastCard=-1, ticking=false;
+  function update(){
+    ticking=false;
+    var p=progress(), ph_=phase(p);
+
+    var C;
+    if(ph_.k==='lead') C=F[0]-30;
+    else if(ph_.k==='dwell') C=F[ph_.i]-30+60*ph_.t;
+    else if(ph_.k==='travel') C=lerp(F[ph_.i]+30,F[ph_.i+1]-30,ease(ph_.t));
+    else C=F[4]+30;
+    var maxTx=VBW*sc-pw;
+    var tx=clamp(-(C*sc-focal*pw),-maxTx,0), ty=0, z=1, Cp=C;
+    if(ph_.k==='end'){
+      var e=ease(ph_.t), zEnd=pw/(VBW*sc);
+      z=lerp(1,zEnd,e); tx=lerp(tx,0,e); ty=lerp(0,Math.max(0,ph*endY-ph*zEnd/2),e); Cp=lerp(C,3600,e);
+    }
+    world.style.transform='translate3d('+tx.toFixed(1)+'px,'+ty.toFixed(1)+'px,0) scale('+z.toFixed(4)+')';
+    far.setAttribute('transform','translate('+(0.35*Cp).toFixed(1)+' 0)');
+
+    var L;
+    if(ph_.k==='lead') L=0;
+    else if(ph_.k==='dwell'){
+      var a=A[ph_.i][0], b=A[ph_.i][1], t=ph_.t;
+      if(ph_.i===4) L= t<.5 ? lerp(a,Lground,ease(t/.5)) : lerp(Lground,b,ease((t-.5)/.5));
+      else L=lerp(a,b,ease(t));
+    } else if(ph_.k==='travel') L=lerp(A[ph_.i][1],A[ph_.i+1][0],ph_.t);
+    else L=total;
+    thread.style.strokeDashoffset=(total-L).toFixed(1);
+    var hp=thread.getPointAtLength(L);
+    head.setAttribute('transform','translate('+hp.x.toFixed(1)+' '+hp.y.toFixed(1)+')');
+    head.classList.toggle('drill',L>Lground+4);
+    head.style.opacity= ph_.k==='end' ? (1-ph_.t).toFixed(2) : 1;
+
+    var card = ph_.k==='end' ? 5 : (ph_.k==='travel' ? (ph_.t<.5?ph_.i:ph_.i+1) : ph_.i);
+
+    var s0=clamp((p-dwellStart(0))/D,0,1), swap=smooth(.28,.48,s0);
+    pKey.style.opacity=(1-swap).toFixed(3);
+    pSmart.style.opacity=swap.toFixed(3);
+    for(var j=0;j<apps.length;j++) apps[j].classList.toggle('off', s0 < .46+j*.016);
+    var tabT=smooth(.72,.92,s0);
+    pTab.style.opacity=tabT.toFixed(3);
+    pTab.style.transform='translate(0px,'+((1-tabT)*28).toFixed(1)+'px)';
+
+    var sunStart=dwellStart(0)+D+T*.3, sunT=clamp((p-sunStart)/(T*.7+D*.75),0,1), se=ease(sunT);
+    sun.setAttribute('transform','translate('+(2640+110*sunT).toFixed(1)+' '+(600-420*se).toFixed(1)+')');
+
+    pulseA.style.opacity=(card===1&&L>=LflowA)?1:0;
+    pulseB.style.opacity=(card===2&&L>=LflowB)?1:0;
+
+    var drillT=clamp((L-Lground)/(total-Lground),0,1);
+    drive.setAttribute('y',(300+300*drillT).toFixed(1));
+    core.style.opacity=smooth(.82,1,drillT).toFixed(3);
+    labels.style.opacity=(card>=4?smooth(dwellStart(4)+D*.1,dwellStart(4)+D*.35,p):0).toFixed(3);
+
+    if(card!==lastCard){
+      cards.forEach(function(c,i){ c.classList.toggle('on',i===card); });
+      if(finalLink) finalLink.tabIndex = card===5 ? 0 : -1;
+      lastCard=card;
+    }
+    var active=Math.min(card,4);
+    for(var r=0;r<5;r++){
+      var st= r===0 ? 0 : dwellStart(r), en= r<4 ? dwellStart(r)+D+T : 1;
+      tracks[r].style.setProperty('--f',clamp((p-st)/(en-st),0,1).toFixed(3));
+      if(r===active) railBtns[r].setAttribute('aria-current','step'); else railBtns[r].removeAttribute('aria-current');
+    }
+  }
+  function req(){ if(!ticking){ ticking=true; requestAnimationFrame(update); } }
+
+  railBtns.forEach(function(b,i){
+    b.addEventListener('click',function(){
+      var target=dwellStart(i)+D*.5;
+      var span=journey.offsetHeight-stage.offsetHeight;
+      var top=journey.getBoundingClientRect().top+window.pageYOffset-topOff+target*span;
+      window.scrollTo({top:Math.round(top),behavior:reduce?'auto':'smooth'});
+    });
+  });
+
+  measure(); update();
+  window.addEventListener('scroll',req,{passive:true});
+  window.addEventListener('resize',function(){ measure(); req(); });
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ measure(); req(); });
+})();
+
+(function(){
+  var img=document.getElementById('hullImg'), cap=document.getElementById('hullCap');
+  if(!img) return;
+  var btns=[].slice.call(document.querySelectorAll('.seg button'));
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
+      img.src=b.getAttribute('data-src'); img.alt=b.getAttribute('data-alt'); cap.textContent=b.getAttribute('data-cap');
+    });
+    b.addEventListener('pointerenter',function(){ var i=new Image(); i.src=b.getAttribute('data-src'); },{once:true});
+  });
+})();
 </script>
 </body>
 </html>
